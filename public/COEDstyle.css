@@ -151,14 +151,14 @@ background: #1D6115;
     display: flex;
     border-radius: 10px;
     padding-bottom: 50px;
-    width: auto;
+    padding-right: 30px;
     margin:100px 300px 10px 100px;
     background-color: #0C4B05;
 }
 
 .registercontainer {
   display: flex;
-  padding: 20px 30px 60px 30px;
+  padding: 20px 20px 60px 20px;
   margin: 40px 10px 10px 0px;
   border-radius: 10px;
   background-color: #0C4B05;
