@@ -40,21 +40,21 @@
 
 <div class="dashboardcontainer">
     <div class="rightcontainer">
-        <img src="/images/sample.jpg" alt="Avatar" class="image">
+        <img src="/images/right.png" alt="Avatar" class="image">
         <div class="rightoverlay">
             <div class="text">Applicants</div>
         </div>
     </div>
     
     <div class="middlecontainer">
-        <img src="/images/sample2.jpg" alt="Avatar" class="image">
+        <img src="/images/middle.png" alt="Avatar" class="image">
         <div class="middleoverlay">
             <div class="text">Dormitory</div>
         </div>
     </div>
 
     <div class="leftcontainer">
-        <img src="/images/sample.jpg" alt="Avatar" class="image">
+        <img src="/images/left.png" alt="Avatar" class="image">
         <div class="overlay">
             <div class="text">Occupants</div>
         </div>
