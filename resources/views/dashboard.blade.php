@@ -61,9 +61,9 @@
     </div>
 </div>
 <div class="buttondashboardcontainer">
-    <a href="listapplication"><button type="button" class="yellowbutton" style="margin-right:10px;"> View Applicants</button></a>
-    <a href="viewdorm"><button type="button" class="yellowbutton" style="margin-right:10px;"> Update Dorm</button></a>
     <a href="listoccupants"><button type="button" class="yellowbutton" style="margin-right:10px;"> View Occupants</button></a>
+    <a href="viewdorm"><button type="button" class="yellowbutton" style="margin-right:10px;"> Update Dorm</button></a>
+    <a href="listapplication"><button type="button" class="yellowbutton" style="margin-right:10px;"> View Applicants</button></a>
 </div>
 
     </body>
