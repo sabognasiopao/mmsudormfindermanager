@@ -19,18 +19,12 @@ body {
     overflow: hidden;
 }
 
-.titleheader{
-    color: #FFB700;
-    font-size: 30px;
-    margin-top: 20px;
-}
-
 h1{
-    color: #0C4B05;
+    color: #0C4B05; font-size: 2vw;
 }
 
 h3{
-    color: #FFB700;
+    color: #FFB700; 
 }
 
 h4{
@@ -38,38 +32,54 @@ h4{
     margin-left: 10px;
     margin-right: 100px;
     font-family:Unna;
+    font-size: 1vw;
 }
 
 h5{
   color: #FFB700;
   font-family: Arial;
   text-align: center;
-
-}
-
-form {
-  margin-left: 100px;
-  margin-top: 70px;
-  border-style: none;
-  display: inline-block;
 }
 
 legend{
   color:#FFB700;
-  font-size:20px;
+  font-size:2vw;
 }
+
+hr{
+  width: 95%; 
+  border-color: #FFB700;
+  float: left;
+  margin-top: 20px;
+}
+
+label{
+  font-family: ABold;
+  color: #0C4B05;
+  font-size: 1.4vw;
+  width: 20%;    
+  display: inline-block;
+}
+
+/* HEADER STYLE */
+.titleheader{
+  color: #FFB700;
+  font-size: 2vw;
+  margin-top: 20px;
+}
+
 
 .header{
   background-color: #FFCD00;
-  padding-left: 350px;    
   color: #0C4B05;
+  padding-left: 25%;
   display: flex;
+  width: auto;
 }
 
 .header input[type=text] {
 padding: 6px;
-margin:0px 0px 0px -300px;
-font-size: 17px;
+font-size: 1vw;
 border: none;
 }
 
@@ -78,44 +88,88 @@ background: #1D6115;
 }
 
 .header select{
-    margin:30px 0px 0px -80px;
+  margin-top:2%;
+  margin-left: 1%;
+  font-size: 1vw;
+  width: auto;
 }
 
 .header label{
-  margin:35px 0px 0px 200px;
+  margin-top:2%;
+  margin-left: 10%;
 }
 
 .header button{
-  background-color:transparent;
+  background-color:#eee;
   color: #FFCD00;
   height: 30px;
-  width: 30;
+  width: 10%;
   border-style: none;
   cursor: pointer;
 }
 
+/* CONTACT PAGE CONTAINER */
+
+.contactcontainer{
+  display:flexbox;
+  margin-top: 2%;
+  padding-left: 25%;    
+  height: 550px;
+  overflow: auto;
+}
+
+.contactcontainer img{
+  width: 5%; height: 5%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.contactcontainer ul{
+  list-style-type: none;
+}
+
+.contactcontainer ol{
+  font-size: 1.4vw;
+}
+
+.contactcontainer li{
+  margin-top: 2%;
+}
+
+.boxcontact{
+ border-style: solid; border-color: #FFCD00;
+ width: 80%;
+ padding-left: 5%;
+ margin-top: 5%;
+}
+/* END CONTACT PAGE CONTAINER */
+
+/* DASHBOARD STYLE */
 .dashboardcontainer{
     display: flex;
-    padding-top: 300px;
-    padding-left: 400px;    
+    margin-top: 5%;
+    padding-left: 25%;    
 }
 
 .buttondashboardcontainer{
-  display: flex;
+  display:flex;
+  width: 55%;
   position: absolute;
-  padding-top: 10px;
-  padding-left: 400px;    
+  margin-left: 25%;    
 }
 
 .listappcontainer {
     display: block;
-    padding-left: 400px;    
+    padding-left: 25%;   
+    margin-top: 5%; 
 }
 
 .listappcontainer form {
   margin-left: 0px;
   border-style: none;
   display: inline-block;
+  width: 90%;
 }
 
 .username{
@@ -141,36 +195,47 @@ background: #1D6115;
 }
 
 .updatedormcontainer{
-  padding-left: 300px;
+  padding-left: 25%;
+  margin-top: 5%;
   overflow: auto;
-  height: 600px;
+  height: 500px;
   width: auto;
 }
 
 .logincontainer {
     display: flex;
     border-radius: 10px;
-    padding-bottom: 50px;
-    padding-right: 30px;
-    margin:100px 300px 10px 100px;
+    width: 25%;
+    height: 400px;
+    margin: 5% 5% 5% 50%;
     background-color: #0C4B05;
+}
+
+.logincontainer form {
+  border-style: none;
+  display: inline-block;
+  width: 65%;
+  height: 300px;
+  margin: 10% 2% 2% 20%;
 }
 
 .registercontainer {
   display: flex;
-  padding: 20px 20px 60px 20px;
-  margin: 40px 10px 10px 0px;
   border-radius: 10px;
   background-color: #0C4B05;
-  width: auto;
+  width: 50%;
+  padding-bottom: 5%;
+  margin: 5% 5% 5% 40%;
+   
 }
 
 
-hr{
-  width: auto; 
-  border-color: #FFB700;
-  margin-top: 20px;
-
+.registercontainer form {
+  border-style: none;
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  margin: 10% 2% 2% 10%;
 }
 
 .logincontainer label{
@@ -183,24 +248,36 @@ hr{
 }
 
 .loginform {
-    width: 250px;
-    height: 40px;
-    border-style: none;
-    border-radius: 10px;
-    text-indent: 10px;
-    margin-top: 70px;
+  width: 45%;
+  font-size: 1.1vw; 
+  height: 10%;   
+  margin-right: 2%;
+  border-style: none;
+  border-radius: 10px;
+  text-indent: 10px;
 }
 
 .yellowbutton {
     background-color:#FFB700;
     color: #0C4B05;
     border-style: none;
-    font-size: 20px;
-    width: 250px;
+    font-size: 1.3vw;
+    width: 30%;
     height: 40px;
     border-radius: 12px;
-    transition: all 0.5s;
     cursor: pointer;
+}
+
+.dashboardbutton {
+  background-color:#FFB700;
+  color: #0C4B05;
+  border-style: none;
+  font-size: 1.3vw;
+  margin: 3% 100px 0% 10px;
+  width: 90%;
+  height: 40px;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
 .cancelbutton{
@@ -209,16 +286,18 @@ hr{
   background-color:#0C4B05;
   color:#FFB700;
   border-style: solid;
-  font-size: 20px;
-  width: 250px;
-  height: 30px;
+  font-size: 1.3vw;
+  width: 30%;
+  height: 35px;
   border-radius: 12px;
+  cursor: pointer;
 }
+
 .secondyellowbutton {
     background-color:#FFB700;
     color: #0C4B05;
     border-style: none;
-    width: 200px;
+    width: 20%;
     height: 40px;
     border-radius: 20px;
     margin-top:15px; 
@@ -232,7 +311,7 @@ hr{
     color: #0C4B05;
     border-style:solid;
     border-color: #0C4B05;
-    width: 200px;
+    width: 20%;
     height: 40px;
     border-radius: 20px;
     margin-top:15px; 
@@ -241,14 +320,13 @@ hr{
     cursor: pointer;
 }
 
-
 .registerbutton {
   background-color:#1D6115;
   color: #FFB700;
   font-size: 20px;
   border-style:solid;
   border-color: #FFB700;
-  width: 250px;
+  width: 100%;
   height: 40px;
   border-radius: 10px;
   margin-bottom:10px;
@@ -271,6 +349,7 @@ hr{
 .inputapp{
     font-family: Regular;
     height: 30px;
+    margin-left: 5%;
     display: inline-block;
     border-radius: 5px;
     border-width: 1px;
@@ -284,20 +363,10 @@ margin-top: 15px;
     font-family: Regular;
     height: 30px;
     border-style: none;
-    font-size: 20px;
+    font-size: 1.3vw;
     margin-left: 20px;
     background-color: #F3EEED;
 }
-
-label{
-    font-family: ABold;
-    color: #0C4B05;
-    font-size: 20px;
-    width: 200px;    
-    display: inline-block;
-}
-
-
 
 .title {
     color: #1D6115;
@@ -355,7 +424,6 @@ label{
     height: auto;
 }
 
-
 .dorm_details_con {
     margin: auto;
     display: flex;
@@ -386,7 +454,6 @@ label{
     margin-top: 100px;
 }
 
-
 /* FOR VERTICAL NAVIGATION BAR */
   
 .verticalnav {
@@ -395,8 +462,8 @@ display: flex;
 }
 
 .verticalnav img{
-    width: 20px;
-    height: 20px;
+    width: 10%;
+    height: 10%;
     margin-right: 10px;
     margin-bottom: 5px;
     vertical-align: middle;
@@ -431,29 +498,28 @@ display: flex;
   }
 
   /*FOR IMAGE OVERLAY DASHBOARD*/
-
+  * {
+    box-sizing: border-box;
+  }
   
 .leftcontainer {
     position: relative;
-    margin-top: -200px;
     margin-right: 10px;
   }
 
 .rightcontainer{
     position: relative;
-    margin-top: -200px;
     margin-right: 10px;
 }
 
 .middlecontainer{
     position: relative;
-    margin-top: -200px;
     margin-right: 10px;
 }
   
 .image {
     display: block;
-    width: 250px;
+    width: 100%;
     height:250px;
 }
   
@@ -494,25 +560,25 @@ display: flex;
 }
 
   .leftcontainer:hover .overlay {
-    width: 250px;
+    width: 100%;
     height:250px;
   }
 
   .rightcontainer:hover .rightoverlay {
-    width: 250px;
+    width: 100%;
     height:250px;
     left: 0;
   }
 
   .middlecontainer:hover .middleoverlay {
-    width: 250px;
+    width: 100%;
     height:250px;
     bottom: 0;
   }
   
   .text {
     color: #FFB700;
-    font-size: 20px;
+    font-size: 1.2vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -526,7 +592,7 @@ display: flex;
   .tableFixHead {
     overflow-y: auto;
     height: 400px;
-    width: 1110px;
+    width: 95%;
   }
   .tableFixHead thead th {
     position: sticky;
@@ -536,11 +602,11 @@ display: flex;
   .tableFixHeadtitle {
     position: sticky;
     padding-left: 10px;
-    width: 1100px;
+    width: 95%;
     margin: 50px 0px 0px 0px;
     color: #FFB700;
     background-color: #0C4B05;
-    font-size: 30px;
+    font-size: 2vw;
   }
 
   table {

@@ -33,8 +33,8 @@
             <li><a href="listapplication"> <img src="https://img.icons8.com/fluent-systems-regular/50/000000/parse-resume.png"/> Applicants</a></li>
             <li><a href="listoccupants"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/user-rights.png"/> Occupants</a></li>
             <li><a class="active" href="viewdorm"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/department.png"/> Dorm</a></li>
-            <li><a href="#contact"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/info-squared.png"/> Contact</a></li><br><br>
-            <li><a href="#logout" style="color:red;"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png"/>Log Out</a></li>
+            <li><a href="contact"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/info-squared.png"/> Contact</a></li><br><br>
+            <li><a href="welcome" style="color:red;"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png"/>Log Out</a></li>
         </ul>    
     </div>
 
@@ -43,54 +43,48 @@
 <form>
 
     <label for="fname">Owner</label>
-        <input type="text" id="fname" name="fname" style="width: 400px;" class="inputapp" value="Sample Name"><br><br>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Name"><br><br>
     <label for="fname">Location</label>
-        <input type="text" id="fname" name="fname" style="width: 400px;" class="inputapp" value="Sample Location"><br><br>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Location"><br><br>
     <label for="fname">Contact</label>
-        <input type="text" id="fname" name="fname" style="width: 400px;" class="inputapp" value="Sample Contact"><br><br><br>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Contact"><br><br><br>
 
     <label for="fname">Rental Fee</label>
-        <input type="text" id="fname" name="fname" style="width: 400px;" class="inputapp" value="1500"><br><br>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="1500"><br><br>
     <label for="fname">Amenities</label>
-        <input type="text" id="fname" name="fname" style="width: 400px;" class="inputapp" value="Sample Amenities"><br><br><br>
-    
-    
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Amenities"><br><br><br>
+
     <label for="quantity">Available space</label>
         <input type="number" id="quantity" name="quantity" class="inputapp" min="0" value="10"><br><br>    
         
-    <label for="image">Add Image [maximum of 4] <h5 style="margin-top:0px;color:#FFB700;">File type: [JPG/PNG]</h5></label> 
-    <input type="file" name="image" multiple class="inputapp"><br><br>
+    <label for="image">Add Image <br>[maximum of 4] <h5 style="margin-top:0px;color:#FFB700;">File type: [JPG/PNG]</h5></label> 
+    <input type="file" name="image" multiple class="inputapp"><br>
 
     <label for="image">Add Contract [maximum of 2] <h5 style="margin-top:0px;color:#FFB700;">File type: [DOCS/PDF]</h5></label>
     <input type="file" name="image"  multiple class="inputapp"><br><br>
 
 <div id="newlink">
     <label for="fname">Room Type</label>
-        <input type="text" id="fname" name="fname" style="width: 200px;" class="inputapp" value="1500">
+        <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="1500">
     <label for="fname" style="margin-left:10px;">Rental Fee</label>
-        <input type="text" id="fname" name="fname" style="width: 100px;margin-left:-90px;" class="inputapp" value="1500">
+        <input type="text" id="fname" name="fname" style="width:5%;margin-left:-10%;" class="inputapp" value="1500">
     <button type="button" onclick="new_link()" class="addbutton">+</button>  <br><br>
 </div>
 
 <div style="padding-right:10px;margin-top:10px;">
-<a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button></a>
-<input type="submit" onclick="sub()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE"> 
+    <a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button></a>
+    <input type="submit" onclick="sub()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE"> 
 </div>
 
 </form>
 
 <!-- Template -->
 <div id="newlinktpl" style="display:none">
-<label for="fname"></label>
-        <input type="text" id="fname" name="fname" style="width: 200px;" class="inputapp" value="1500">
-<label for="fname" style="margin-left:10px;">Rental Fee</label>
-        <input type="text" id="fname" name="fname" style="width: 100px;margin-left:-90px;" class="inputapp" value="1500">
-        
+    <label for="fname"></label>
+        <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="1500">
+    <label for="fname" style="margin-left:10px;">Rental Fee</label>
+        <input type="text" id="fname" name="fname" style="width:5%;margin-left:-10%;" class="inputapp" value="1500">
 </div>
-
-
-
-
 </div>
 </body>
 

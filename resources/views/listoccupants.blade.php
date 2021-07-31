@@ -35,15 +35,15 @@
             <li><a href="listapplication"> <img src="https://img.icons8.com/fluent-systems-regular/50/000000/parse-resume.png"/> Applicants</a></li>
             <li><a class="active" href="listoccupants"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/user-rights.png"/> Occupants</a></li>
             <li><a href="viewdorm"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/department.png"/> Dorm</a></li>
-            <li><a href="#contact"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/info-squared.png"/> Contact</a></li><br><br>
+            <li><a href="contact"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/info-squared.png"/> Contact</a></li><br><br>
             <li><a href="welcome" style="color:red;"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png"/>Log Out</a></li>
         </ul>    
     </div>
     
     <div class="header"> <h1>OCCUPANTS</h1>
-      <form style="margin-top:20px;margin-left:800px;" action="###">
+      <form style="margin-top:2%;margin-left:30%;" action="###">
         <input type="text" id="search" onkeyup="searchFunction()" placeholder="Search.." name="search">
-        <button type="submit"><img src="https://img.icons8.com/pastel-glyph/50/000000/search--v2.png" width="20px" height="20px"/></button>
+        <button type="submit"><img src="https://img.icons8.com/pastel-glyph/50/000000/search--v2.png" width="100%"></button>
       </form>        
     </div>
 
@@ -64,82 +64,12 @@
             <td>18-020008</td>
             <td>09355350600</td>
           </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr> 
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr> 
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr> 
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr> 
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
-          <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
-            <td>18-020008</td>
-            <td>09355350600</td>
-          </tr>
         </tbody>
       </table>
     </div>
 
-    <button type="button" class="yellowbutton" onclick="listapp()" style="float:right;margin-top:20px;margin-right:40px;"> DOWNLOAD</button>
-</div>
+    <button type="button" class="yellowbutton" onclick="listapp()" style="float:right;margin-top:20px;margin-right:10%;"> DOWNLOAD</button>
 
+</div>
 </body>
 </html>

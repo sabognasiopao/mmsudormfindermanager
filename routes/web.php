@@ -57,3 +57,7 @@ Route::get('/registration', function () {
 Route::get('/waitingapproval', function () {
     return view('waitingapproval');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
