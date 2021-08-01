@@ -42,7 +42,7 @@
     <nav class="nav">
       <label class="nav-item" for="section1">A</label>
       <label class="nav-item" for="section2">O</label>
-      <label class="nav-item" for="section2">D</label>
+      <label class="nav-item" for="section3">D</label>
     </nav>
 
     
@@ -66,6 +66,7 @@
           <a href="admindormmain"><button type="button" class="dorm">U P D A T E</button></a>
         </h2>
     </section>
+    <div class="cover"></div>
 
 </div>
 

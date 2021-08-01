@@ -761,7 +761,6 @@ input[type='radio']#section3:checked ~ .cover {
   background-color: #FFCD00;
 }
 
-
 .text--sub {
 	font-size: 12px;
 	letter-spacing: 0.5rem;
@@ -807,4 +806,13 @@ input[type='radio']#section3:checked ~ .cover {
   border-radius: 15px;
   cursor: pointer;
   font-size: 1.1vw;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
