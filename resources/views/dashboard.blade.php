@@ -65,7 +65,7 @@
           cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">MANAGEMENT</p>
           <a href="oncampus"><button type="button" class="dorm">U P D A T E</button></a>
         </h2>
-        </section>
+      </section>
 
 </div>
 
