@@ -678,8 +678,7 @@ display: flex;
   padding-top: 3px;
   padding-left: 7px;
   border: solid 2px #FFCD00;
-  border-radius: 30%;
-  color: #FFB700;
+  border-radius: 50%;
   cursor: pointer;
   font-size:1vw;
 }
@@ -702,6 +701,8 @@ section {
   transition-delay: 0.5s;
 }
 
+
+
 .h2nav {
   font-size: 80px;
   text-align: left;
@@ -722,7 +723,6 @@ input[type='radio'] {
 }
 input[type='radio']#section1:checked ~ nav label[for='section1'] {
   background-color:#FFCD00;
-  color: #0C4B05;
 }
 input[type='radio']#section1:checked ~ section:nth-of-type(1) {
   z-index: 1;
@@ -731,11 +731,10 @@ input[type='radio']#section1:checked ~ section:nth-of-type(1) {
   transition-delay: 0s;
 }
 input[type='radio']#section1:checked ~ .cover {
-  background-color: #FFB700;
+  background-color: #FFCD00;
 }
 input[type='radio']#section2:checked ~ nav label[for='section2'] {
-  background-color: #FFB700;
-  color: #0C4B05;
+  background-color: #FFCD00;
 }
 input[type='radio']#section2:checked ~ section:nth-of-type(2) {
   z-index: 1;
@@ -744,12 +743,11 @@ input[type='radio']#section2:checked ~ section:nth-of-type(2) {
   transition-delay: 0s;
 }
 input[type='radio']#section2:checked ~ .cover {
-  background-color: #FFB700;
+  background-color: #FFCD00;
 }
 
 input[type='radio']#section3:checked ~ nav label[for='section3'] {
-  background-color: #FFB700;
-  color: #0C4B05;
+  background-color: #FFCD00;
 }
 input[type='radio']#section3:checked ~ section:nth-of-type(3) {
   z-index: 1;
@@ -758,7 +756,7 @@ input[type='radio']#section3:checked ~ section:nth-of-type(3) {
   transition-delay: 0s;
 }
 input[type='radio']#section3:checked ~ .cover {
-  background-color: #FFB700;
+  background-color: #FFCD00;
 }
 
 .text--sub {
@@ -797,7 +795,7 @@ input[type='radio']#section3:checked ~ .cover {
 }
 
 .dorm {
-  background-color:#FFB700;
+  background-color:#FFCD00;
   color: #0C4B05;
   margin-top: -3%;
   border-style: none;

@@ -45,7 +45,6 @@
 
     </nav>
 
-    
     <section>
         <h2 class="h2nav"><p class="text--sub">dorm management</p>Applicants <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
           cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">MANAGEMENT</p>
