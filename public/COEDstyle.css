@@ -162,7 +162,7 @@ background: #1D6115;
 .listappcontainer {
     display: block;
     padding-left: 25%;   
-    margin-top: 5%; 
+    margin-top: 2%; 
 }
 
 .listappcontainer form {
@@ -603,7 +603,7 @@ display: flex;
     position: sticky;
     padding-left: 10px;
     width: 95%;
-    margin: 50px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     color: #FFB700;
     background-color: #0C4B05;
     font-size: 2vw;
@@ -659,3 +659,149 @@ display: flex;
   ::-webkit-scrollbar-thumb:hover {
     background: #FFB700; 
   }
+
+  
+/* 2ND SLIDER*/
+.nav {
+  position: fixed;
+  z-index: 2;
+  right: 22%;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.nav-item {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 12px auto;
+  padding-top: 3px;
+  padding-left: 7px;
+  border: solid 2px #FFCD00;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size:1vw;
+}
+.nav-item:hover {
+  background-color: #FFCD00;
+}
+section {
+  margin-top:7.4%;
+  padding-left: 10%;
+  margin-left:20%;
+  padding-bottom: 5%;
+  height: 85%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  transition-delay: 0.5s;
+}
+
+
+
+.h2nav {
+  font-size: 80px;
+  text-align: left;
+  color: #FFCD00;
+}
+section:nth-of-type(1) {
+  background: #0C4B05;
+}
+section:nth-of-type(2) {
+  background: #0C4B05;
+}
+section:nth-of-type(3) {
+  background: #0C4B05;
+}
+
+input[type='radio'] {
+  display: none;
+}
+input[type='radio']#section1:checked ~ nav label[for='section1'] {
+  background-color:#FFCD00;
+}
+input[type='radio']#section1:checked ~ section:nth-of-type(1) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+input[type='radio']#section1:checked ~ .cover {
+  background-color: #FFCD00;
+}
+input[type='radio']#section2:checked ~ nav label[for='section2'] {
+  background-color: #FFCD00;
+}
+input[type='radio']#section2:checked ~ section:nth-of-type(2) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+input[type='radio']#section2:checked ~ .cover {
+  background-color: #FFCD00;
+}
+
+input[type='radio']#section3:checked ~ nav label[for='section3'] {
+  background-color: #FFCD00;
+}
+input[type='radio']#section3:checked ~ section:nth-of-type(3) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+input[type='radio']#section3:checked ~ .cover {
+  background-color: #FFCD00;
+}
+
+.text--sub {
+	font-size: 12px;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.text--normal {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 22px;
+  width: 50%;
+	margin-top: 25px;
+}
+
+.text__background {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 72px;
+	bottom: -60px;
+	color: rgba(0,0,0,0.05);
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.__img {
+	position: absolute;
+	bottom: 20px;
+	right: 30%;
+	max-height: 40vw;
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+}
+
+.dorm {
+  background-color:#FFCD00;
+  color: #0C4B05;
+  margin-top: -3%;
+  border-style: none;
+  width: 20%;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.1vw;
+}

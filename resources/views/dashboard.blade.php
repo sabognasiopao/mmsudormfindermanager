@@ -33,27 +33,40 @@
     </div>
 
 <div class="dashboardcontainer">
-    <div class="rightcontainer">
-        <img src="/images/right.png" alt="Avatar" class="image">
-        <div class="rightoverlay"> <div class="text">Applicants</div></div>
-    </div>
+   
+    <input type="radio" name="item" checked="checked" id="section1" />
+    <input type="radio" name="item" id="section2" />
+    <input type="radio" name="item" id="section3" />
+
+    <nav class="nav">
+      <label class="nav-item" for="section1">A</label>
+      <label class="nav-item" for="section2">O</label>
+      <label class="nav-item" for="section3">D</label>
+
+    </nav>
+
     
-    <div class="middlecontainer">
-        <img src="/images/middle.png" alt="Avatar" class="image">
-        <div class="middleoverlay"> <div class="text">Dormitory</div></div>
-    </div>
+    <section>
+        <h2 class="h2nav"><p class="text--sub">dorm management</p>Applicants <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
+          cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">MANAGEMENT</p>
+          <a href="oncampus"><button type="button" class="dorm">V I E W</button></a>
+        </h2>
+    </section>
+    
+    <section>
+        <h2 class="h2nav"><p class="text--sub">dorm management</p>Occupants<p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
+          cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">MANAGEMENT</p>
+          <a href="oncampus"><button type="button" class="dorm">V I E W</button></a>
+        </h2>          
+    </section>
+   
+    <section>
+        <h2 class="h2nav"><p class="text--sub">dorm management</p>Dormitory<p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
+          cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">MANAGEMENT</p>
+          <a href="oncampus"><button type="button" class="dorm">U P D A T E</button></a>
+        </h2>
+        </section>
 
-    <div class="leftcontainer">
-        <img src="/images/left.png" alt="Avatar" class="image">
-        <div class="overlay"> <div class="text">Occupants</div></div>
-    </div>
-
-</div>
-
-<div class="buttondashboardcontainer">
-    <a href="listoccupants"><button type="button" class="dashboardbutton" > View Occupants</button></a>
-    <a href="viewdorm"><button type="button" class="dashboardbutton" > Update Dorm</button></a>
-    <a href="listapplication"><button type="button" class="dashboardbutton" > View Applicants</button></a>
 </div>
 
 </body>
