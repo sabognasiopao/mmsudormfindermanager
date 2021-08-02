@@ -14,7 +14,7 @@
         
     </head>
     
-    <body class="antialiased">
+    <body style="background-image: url('/images/bg.jpg');  background-repeat: no-repeat;background-size:100% 100%;" class="antialiased">
         
     <div class="uppernav">
         <h3 style="color:#0C4B05;margin-left:20px;">MMSU </h3><h3> - COEDS / Proprietor Dorm Management</h3>
@@ -24,7 +24,7 @@
                 <h4>MARIANO MARCOS <br> STATE UNIVERSITY</h4>
                 </div>
                 
-                <img style="float:left;margin-left:5%;" src="/images/mmsu logo.png"  height="35%" width="35%">
+                <img style="right:23%;" class="__img" src="images/mmsu logo.png" />
 
                 <div class="logincontainer">
 
@@ -35,7 +35,7 @@
 
                        <a href="dashboard"> <button type="button" class="yellowbutton" style="width:100%;margin-top:15px;">Log In</button><br></a>
                         <hr>
-                        <label for="register">New Here? Register first!</label><br>
+                        <label for="register" style="margin-left:15%;">New Here? Register first!</label><br>
                        <a href="registration"> <button type="button" id="register" class="registerbutton" style="margin-top:15px;">Register</button></a>
 
                     </form>

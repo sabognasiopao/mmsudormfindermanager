@@ -49,21 +49,21 @@
     <section>
         <h2 class="h2nav"><p class="text--sub">dorm management</p>Applicants <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
           cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">DORM MANAGEMENT</p>
-          <a href="adminregistration"><button type="button" class="dorm">V I E W</button></a>
+          <a href="listapplication"><button type="button" class="dorm">V I E W</button></a>
         </h2>
     </section>
    
     <section>
         <h2 class="h2nav"><p class="text--sub">dorm management</p>Occupants<p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
           cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">DORM MANAGEMENT</p>
-          <a href="admindormmain"><button type="button" class="dorm">V I E W</button></a>
+          <a href="listoccupants"><button type="button" class="dorm">V I E W</button></a>
         </h2>
     </section>
 
     <section>
         <h2 class="h2nav"><p class="text--sub">admin management</p>Dormitory<p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
           cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p><p class="text__background">DORM MANAGEMENT</p>
-          <a href="admindormmain"><button type="button" class="dorm">U P D A T E</button></a>
+          <a href="viewdorm"><button type="button" class="dorm">U P D A T E</button></a>
         </h2>
     </section>
     <div class="cover"></div>
