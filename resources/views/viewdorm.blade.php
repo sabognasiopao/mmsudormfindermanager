@@ -45,7 +45,8 @@
     <label style="margin-left:1.5%;"for="fname">Amenities</label>
         <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Amenities" readonly="readonly"><br><br><br>
     <label style="margin-left:1.5%;"for="quantity">Available space</label>
-        <input type="number" id="quantity" name="quantity" class="readapp" min="0" value="10" readonly="readonly"><br><br>   
+        <input type="number" id="quantity" name="quantity" class="readapp" min="0" value="10" readonly="readonly"><br><br>
+    
     <table class="viewdormtable" id="room">
                 <tr>
                     <th>Room Type</th>
@@ -55,10 +56,21 @@
                     <td class="readapp">Single</td>
                     <td class="readapp">1500</td>
                 </tr>
-               
-    </table> 
+    </table> <br><br>
 
-    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:35%;margin-top:10px;">UPDATE</button></a>
+    <label style="margin-left:1.5%;" for="slide">Uploaded Images</label>
+    <div class="slide-container" id="slide">
+            <img src="http://placehold.it/200" />
+            <img src="http://placehold.it/200" />
+            <img src="http://placehold.it/200" />
+            <img src="http://placehold.it/200" />
+            <img src="http://placehold.it/200" />
+            <img src="http://placehold.it/200" />
+            <img src="http://placehold.it/200" />
+            <img src="http://placehold.it/200" />
+        </div>
+ 
+    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:10%;margin-top:10px;">UPDATE</button></a>
 
 </form>
 </div>
