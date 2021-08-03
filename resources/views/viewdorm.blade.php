@@ -53,7 +53,7 @@
             <option value="chs">Quadruple</option>
         </select>
     <label for="fname" style="margin-left:10px;margin-right:-10%;">Room Fee</label>
-        <input type="text" id="fname" name="fname" style="width: 5%; margin-left:0px;" class="inputapp" value="1200" readonly="readonly"><br><br><br>
+        <input type="text" id="fname" name="fname" style="width: 5%; margin-left:10px;" class="inputapp" value="1200" readonly="readonly"><br><br><br>
    
     <label for="quantity">Available space</label>
         <input type="number" id="quantity" name="quantity" class="inputapp" min="0" value="10" readonly="readonly"><br><br>    

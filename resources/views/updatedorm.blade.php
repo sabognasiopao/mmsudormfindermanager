@@ -56,12 +56,15 @@
 
     <label for="quantity">Available space</label>
         <input type="number" id="quantity" name="quantity" class="inputapp" min="0" value="10"><br><br>    
-        
-    <label for="image">Add Image <br>[maximum of 4] <h5 style="margin-top:0px;color:#FFB700;">File type: [JPG/PNG]</h5></label> 
-    <input type="file" name="image" multiple class="inputapp"><br>
+    
+<div id="linkimage">
+        <label for="image">Add Image <br><h5 style="margin-top:0px;color:#FFB700;">File type: [JPG/PNG]</h5></label> 
+        <input type="file" name="image" accept="image/*" class="inputapp">
+        <button type="button" onclick="new_linkimage()" class="addbutton">+</button>  <br>
+</div>
 
-    <label for="image">Add Contract [maximum of 2] <h5 style="margin-top:0px;color:#FFB700;">File type: [DOCS/PDF]</h5></label>
-    <input type="file" name="image"  multiple class="inputapp"><br><br>
+    <label for="image">Add Contract  <h5 style="margin-top:0px;color:#FFB700;">File type: [DOCS/PDF]</h5></label>
+    <input type="file" name="image"  accept=".doc,.pdf,.docx" class="inputapp"><br>
 
 <div id="newlink">
     <label for="fname">Room Type</label>
@@ -72,19 +75,28 @@
 </div>
 
 <div style="padding-right:10px;margin-top:10px;">
-    <a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button></a>
-    <input type="submit" onclick="sub()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE"> 
+    <a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button> </a>
+    <input type="submit" onclick="update()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE">
 </div>
 
 </form>
 
-<!-- Template -->
-<div id="newlinktpl" style="display:none">
-    <label for="fname"></label>
-        <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="1500">
-    <label for="fname" style="margin-left:10px;">Rental Fee</label>
-        <input type="text" id="fname" name="fname" style="width:5%;margin-left:-10%;" class="inputapp" value="1500">
+<!-- Template FOR ROOM TYPE-->
+    <div id="newlinktpl" style="display:none">
+        <label for="fname"></label>
+            <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="1500">
+        <label for="fname" style="margin-left:10px;">Rental Fee</label>
+            <input type="text" id="fname" name="fname" style="width:5%;margin-left:-10%;" class="inputapp" value="1500">
 </div>
+
+<!-- Template FOR IMAGE -->
+<div id="newlinkimage" style="display:none">
+    <label for="image"></label> 
+    <input type="file" name="image" accept="image/*" class="inputapp">
+    
+</div>
+
+
 </div>
 </body>
 
@@ -94,6 +106,7 @@
 This script is identical to the above JavaScript function.
 */
 var ct = 1;
+var ig = 1;
 function new_link()
 {
 	ct++;
@@ -105,6 +118,18 @@ function new_link()
 	div1.innerHTML = document.getElementById('newlinktpl').innerHTML + addLink + delLink ;
 	document.getElementById('newlink').appendChild(div1);
 }
+
+function new_linkimage()
+{
+	ig++;
+	var div2 = document.createElement('div');
+	div2.id = ig;
+	// link to delete extended form elements
+	var delLink = '<button type="button" onclick="delItimg('+ ig +')" class="addbutton">x</button>';
+    var addLink = '<button type="button" onclick="new_linkimage()" class="addbutton">+</button>  ';
+	div2.innerHTML = document.getElementById('newlinkimage').innerHTML + addLink + delLink ;
+	document.getElementById('linkimage').appendChild(div2);
+}
 // function to delete the newly added set of elements
 function delIt(eleId)
 {
@@ -114,14 +139,15 @@ function delIt(eleId)
 	parentEle.removeChild(ele);
 }
 
-function sub(){
-            ("input[type = 'submit']").click(function sub(){
-               var fileUpload = ("input[type='file']");
-               if (parseInt(fileUpload.get(0).files.length) > 3){
-                window.open("You are only allowed to upload a maximum of 3 files");
-               }
-            });
-         };
+function delItimg(eleId)
+{
+	d = document;
+	var ele = d.getElementById(eleId);
+	var parentEle = d.getElementById('linkimage');
+	parentEle.removeChild(ele);
+}
+
+
      
 </script>
 
