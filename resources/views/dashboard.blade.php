@@ -47,22 +47,19 @@
 
     
     <section>
-        <h2 class="h2nav"><p class="text--sub">dorm management</p>Applicants <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
-          cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p>
+        <h2 class="h2nav"><p class="text--sub">dorm management</p>Applicants <p class="text--normal">To be able to view and accept/deny your applicants, click view!</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p>
           <a href="listapplication"><button type="button" class="dorm">V I E W</button></a>
         </h2>
     </section>
    
     <section>
-        <h2 class="h2nav"><p class="text--sub">dorm management</p>Occupants<p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
-          cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p>
+        <h2 class="h2nav"><p class="text--sub">dorm management</p>Occupants<p class="text--normal">To be able to view and update your occupants, click view!</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p>
           <a href="listoccupants"><button type="button" class="dorm">V I E W</button></a>
         </h2>
     </section>
 
     <section>
-        <h2 class="h2nav"><p class="text--sub">admin management</p>Dormitory<p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly 
-          cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p>
+        <h2 class="h2nav"><p class="text--sub">dorm management</p>Dormitory<p class="text--normal">To be able to update details in your dormitory, click update!</p><p class="text--sub">CLICK BUTTONS ON THE <br>RIGHT SIDE TO CHOOSE</p>
           <a href="viewdorm"><button type="button" class="dorm">U P D A T E</button></a>
         </h2>
     </section>
