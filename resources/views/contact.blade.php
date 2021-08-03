@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="COEDstyle.css">    
     </head>
     
-    <body class="antialiased">
+    <body style="background-color:#1D6115;"class="antialiased">
         
     <div class="uppernav"> <h3 style="color:#0C4B05;margin-left:20px;">MMSU </h3><h3> - COEDS / Proprietor Dorm Management</h3> </div>
     
@@ -32,7 +32,7 @@
 
 <div class="contactcontainer">
     <div class="boxcontact">
-        <h1>Frequently Asked Questions:</h1>
+        <h1 style="color: #FFCD00;">Frequently Asked Questions:</h1>
         <ol type="A">
             <li><b>How to update details in Dorm?</b></li>
                 <ol type="i">
@@ -52,7 +52,7 @@
     </div>
 
     <div class="boxcontact">
-        <h1>Contact Information</h1>
+    <h1 style="color: #FFCD00;">Contact Information</h1>
         <ul>
             <li><img src="https://img.icons8.com/pastel-glyph/50/000000/email--v3.png"/>dormfinder@mmsu.edu.ph</li>
             <li><img src="https://img.icons8.com/pastel-glyph/64/000000/phone-message--v1.png"/>09355350600</li>
