@@ -437,12 +437,20 @@ margin-top: 15px;
     margin-left: -150px;
 }
 
-.dorm_info {
-    color: #0C4B05;
-    font-size: 20px;
-    font-family: Regular;
 
+/* TABLE FOR VIEW DORM */
+.viewdormtable{
+  width:35%;
+  font-size: 2vw;
 }
+.viewdormtable th{
+font-family: ABold;
+color: #0C4B05;
+font-size: 1.5vw;
+text-align: left;
+}
+
+/* TABLE FOR VIEW DORM */
 
 .dorm_img {
     display: flex;

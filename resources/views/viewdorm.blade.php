@@ -36,27 +36,27 @@
 
     <div class="updatedormcontainer">
     <form style="width:90%;">
-    <label for="fname">Owner</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Name" readonly="readonly"><br><br>
-    <label for="fname">Address</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Location" readonly="readonly"><br><br>
-    <label for="fname">Contact</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Contact" readonly="readonly"><br><br>
-    <label for="fname">Amenities</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Amenities" readonly="readonly"><br><br><br>
-    
-    <label for="room">Type of Room</label>
-        <select name="room" id="room" style="width: 20%;"class="inputapp" readonly="readonly">
-            <option value="cas">Single</option>
-            <option value="coe">Double</option>
-            <option value="cbea">Triple</option>
-            <option value="chs">Quadruple</option>
-        </select>
-    <label for="fname" style="margin-left:10px;margin-right:-10%;">Room Fee</label>
-        <input type="text" id="fname" name="fname" style="width: 5%; margin-left:10px;" class="inputapp" value="1200" readonly="readonly"><br><br><br>
-   
-    <label for="quantity">Available space</label>
-        <input type="number" id="quantity" name="quantity" class="inputapp" min="0" value="10" readonly="readonly"><br><br>    
+    <label style="margin-left:1.5%;" for="fname">Owner</label>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Name" readonly="readonly"><br><br>
+    <label style="margin-left:1.5%;"for="fname">Address</label>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Location" readonly="readonly"><br><br>
+    <label style="margin-left:1.5%;"for="fname">Contact</label>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Contact" readonly="readonly"><br><br>
+    <label style="margin-left:1.5%;"for="fname">Amenities</label>
+        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Amenities" readonly="readonly"><br><br><br>
+    <label style="margin-left:1.5%;"for="quantity">Available space</label>
+        <input type="number" id="quantity" name="quantity" class="readapp" min="0" value="10" readonly="readonly"><br><br>   
+    <table class="viewdormtable" id="room">
+                <tr>
+                    <th>Room Type</th>
+                    <th>Price</th>
+                </tr> 
+               <tr>
+                    <td class="readapp">Single</td>
+                    <td class="readapp">1500</td>
+                </tr>
+               
+    </table> 
 
     <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:35%;margin-top:10px;">UPDATE</button></a>
 

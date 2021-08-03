@@ -71,7 +71,8 @@
         <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="1500">
     <label for="fname" style="margin-left:10px;">Rental Fee</label>
         <input type="text" id="fname" name="fname" style="width:5%;margin-left:-10%;" class="inputapp" value="1500">
-    <button type="button" onclick="new_link()" class="addbutton">+</button>  <br><br>
+    <button type="button" onclick="new_link()" class="addbutton">+</button>  
+    <button type="button" onclick="delIt('+ ct +')" class="addbutton">x</button><br><br>
 </div>
 
 <div style="padding-right:10px;margin-top:10px;">
