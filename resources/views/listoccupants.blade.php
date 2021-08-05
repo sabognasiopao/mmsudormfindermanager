@@ -16,9 +16,9 @@
           <script type="text/javascript" src="dormfindercoed.js"></script>
         
     </head>
-    
     <body class="antialiased">
-        
+  
+<!-- NAVIGATION BAR -->  
     <div class="uppernav">
         <h3 style="color:#0C4B05;margin-left:20px;">MMSU </h3><h3> - COEDS / Proprietor Dorm Management</h3>
     </div>
@@ -46,8 +46,10 @@
         <button type="submit"><img src="https://img.icons8.com/pastel-glyph/50/000000/search--v2.png" width="100%"></button>
       </form>        
     </div>
+<!-- END OF NAVIGATION BAR -->  
 
-    <div class="listappcontainer">
+<!--  LIST OF OCCUPANTS -->  
+    <div class="listappcontainer" style="margin-top:2%;">
     <div class="tableFixHeadtitle">LIST OF OCCUPANTS</div>  
     <div class="tableFixHead">
       <table>

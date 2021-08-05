@@ -38,8 +38,8 @@
                         <input type="text" id="dormname" placeholder="Dorm Name" class="loginform" style="margin-top:10px;"> 
                         <input type="text" id="mnumber" placeholder="Mobile Number" class="loginform" style="margin-top:10px;"> <br>
 
-                        <input type="submit" value="Register"class="yellowbutton" style="margin-left:30%;margin-top:15px;"><br>
-                        <a href="welcome"><button type="button" id="cancel" class="cancelbutton" style="margin-left:30%;">Cancel</button></a>
+                        <input type="submit" value="Register"class="yellowbutton" style="width:92%;margin-top:15px;"><br>
+                        <a href="welcome"><button type="button" id="cancel" class="cancelbutton" style="width:92%;">Cancel</button></a>
 
                     </form>
 

@@ -45,7 +45,7 @@
   <!-- END OF NAVIGATION BAR -->
    
   <!-- TABLE -->
-    <div class="listappcontainer">
+    <div class="listappcontainer" style="margin-top:2%;">
         
     <div class="tableFixHeadtitle">LIST OF APPLICANTS</div>  
     <div class="tableFixHead">

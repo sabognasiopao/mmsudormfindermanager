@@ -35,18 +35,27 @@
     </div>
 
     <div class="updatedormcontainer">
-    <form style="width:90%;">
-    <label style="margin-left:1.5%;" for="fname">Owner</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Name" readonly="readonly"><br><br>
-    <label style="margin-left:1.5%;"for="fname">Address</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Location" readonly="readonly"><br><br>
-    <label style="margin-left:1.5%;"for="fname">Contact</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Contact" readonly="readonly"><br><br>
-    <label style="margin-left:1.5%;"for="fname">Amenities</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="readapp" value="Sample Amenities" readonly="readonly"><br><br><br>
-    <label style="margin-left:1.5%;"for="quantity">Available space</label>
-        <input type="number" id="quantity" name="quantity" class="readapp" min="0" value="10" readonly="readonly"><br><br>
-    
+        <form style="width:100%;">
+            <label for="fname">Full Name</label><br>
+                <input type="text" id="fname" name="fname" style="width: 42%;" class="inputapp" value="Sample Name"><br><br>
+
+            <label style="width:20%;" for="brgy">Barangay</label>
+            <label style="width:20%;" for="st">Street</label><br>
+                <input type="text" id="brgy" name="fname" style="width: 20%;" class="inputapp" value="6 Quiling Sur">
+                <input type="text" id="st" name="fname" style="width: 20%;" class="inputapp" value="Jakamo Street"><br><br>
+
+            <label style="width:20%;" for="hn">House Number</label>
+            <label style="width:20%;" for="nl">Nearest Landmark</label><br>
+                <input type="text" id="hn" name="fname" style="width: 20%;" class="inputapp" value="1231">
+                <input type="text" id="nl" name="fname" style="width: 20%;" class="inputapp" value="Teatro Ilocandia"><br><br>
+
+            <label style="width: 20%;" for="fname">Contact</label>
+            <label style="width: 20%;" for="quantity">Available space</label><br>
+                <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="Sample Contact">
+            <input type="number" id="quantity" name="quantity"  style="width: 20%;" class="inputapp" min="0" value="10"><br><br>
+        </form>
+
+    <div class="tablewrapper">
     <table class="viewdormtable" id="room">
                 <tr>
                     <th>Room Type</th>
@@ -56,9 +65,26 @@
                     <td class="readapp">Single</td>
                     <td class="readapp">1500</td>
                 </tr>
-    </table> <br><br>
+                <tr>
+                    <td class="readapp">Single</td>
+                    <td class="readapp">1500</td>
+                </tr>
+                <tr>
+                    <td class="readapp">Single</td>
+                    <td class="readapp">1500</td>
+                </tr>
+                <tr>
+                    <td class="readapp">Single</td>
+                    <td class="readapp">1500</td>
+                </tr>
+                <tr>
+                    <td class="readapp">Single</td>
+                    <td class="readapp">1500</td>
+                </tr>
+    </table></div><br>
 
-    <label style="margin-left:1.5%;" for="slide">Uploaded Images</label>
+    <label style="width:50%;margin-top:2%;" for="slide">Uploaded Images : Click button to add/remove</label>
+   
     <div class="slide-container" id="slide">
             <img src="http://placehold.it/200" />
             <img src="http://placehold.it/200" />
@@ -68,9 +94,11 @@
             <img src="http://placehold.it/200" />
             <img src="http://placehold.it/200" />
             <img src="http://placehold.it/200" />
-        </div>
- 
-    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:10%;margin-top:10px;">UPDATE</button></a>
+    </div>
 
-</form>
+    <a href="updateimage"><button type="button" class="greenbutton" style="margin-right:20%;margin-top:10px;"> UPDATE IMAGE</button></a>
+    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-top:10px;margin-right:2%;">UPDATE FORM</button></a>
+
 </div>
+</body>
+</html>

@@ -42,109 +42,109 @@
 <div class="updatedormcontainer">
 <form>
 
-    <label for="fname">Owner</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Name"><br><br>
-    <label for="fname">Location</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Location"><br><br>
+    <label for="fname">First Name</label>
+    <label for="fname">Middle Name</label>
+    <label for="fname">Last Name</label><br>
+    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name">
+    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name">
+    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name"><br><br>
+
     <label for="fname">Contact</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Contact"><br><br><br>
+    <label for="quantity">Available space</label><br>
+    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Contact">
+    <input type="number" id="quantity" name="quantity" class="inputapp" min="0" value="10"><br>
 
-    <label for="fname">Rental Fee</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="1500"><br><br>
-    <label for="fname">Amenities</label>
-        <input type="text" id="fname" name="fname" style="width: 40%;" class="inputapp" value="Sample Amenities"><br><br><br>
 
-    <label for="quantity">Available space</label>
-        <input type="number" id="quantity" name="quantity" class="inputapp" min="0" value="10"><br><br><br><br>
+    <label style="width:20%;"for="brgy">Barangay</label>
+    <label for="st">Street</label>
+    <label style="width:10%;" for="hn">House Number</label>
+    <label for="nl">Nearest Landmark</label><br>
+    <input type="text" id="brgy" name="fname" style="width: 20%;" class="inputapp" value="6 Quiling Sur">
+    <input type="text" id="st" name="fname" style="width: 25%;" class="inputapp" value="Jakamo Street">
+    <input type="text" id="hn" name="fname" style="width: 10%;" class="inputapp" value="1231">
+    <input type="text" id="nl" name="fname" style="width: 25%;" class="inputapp" value="Teatro Ilocandia"><br><br>
 
-    <label for="image">Add Contract  <h5 style="margin-top:0px;color:#FFB700;">File type: [DOCS/PDF]</h5></label>
-    <input type="file" name="image"  accept=".doc,.pdf,.docx" class="inputapp"><br>
+   
+   
+   
+    <label for="fname">Amenities</label><br>
+    <div class="tablewrapper" style="margin-right:20%;">
+        <input type="checkbox" id="am1" name="vehicle1" value="Bike">
+            <label style="width:20%;" for="am1"> Free Wifi</label>
+        <input type="checkbox" id="am2" name="vehicle2" value="Car">
+            <label style="width:20%;" for="am2"> With Appliances</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3"> Aircondition</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3"> Food Services</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3">Parking</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3"> Laundry Services</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3"> With Living Room</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3"> With Pool</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3"> Surveillance System</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3">Own Bathroom</label>
+        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
+            <label style="width:20%;" for="am3">With Furniture</label>
+    </div><br>
 
-    <div id="linkimage">
-        <label for="image">Add Image <br><h5 style="margin-top:0px;color:#FFB700;">File type: [JPG/PNG]</h5></label> 
-        <button type="button" onclick="new_linkimage()" class="addbutton" style="margin-left:5%;width:20%;">ADD IMAGE</button>  <br>
-    </div>
- 
+    <label style="width:15%;" for="contract">Add Contract <br>File type: [DOCS/PDF]</label>
+        <input type="file" name="image" accept=".doc,.pdf,.docx" class="inputapp"><br>
+
     <div id="newlink">
-    <label for="fname">Room Type</label>
-    <button type="button" onclick="new_link()" class="addbutton" style="margin-left:5%;width:20%;">ADD ROOM TYPE</button>  
+        <label style="width:15%;" for="fname">Room Type</label>
+        <button type="button" onclick="new_link()" class="addbutton" style="width:15%;">ADD ROOM TYPE</button>  
     </div>
+
   
-<div style="padding-right:10px;margin-top:10px;">
-    <a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button> </a>
-    <input type="submit" onclick="update()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE">
-</div>
+    <div style="padding-right:10%;margin-top:10px;">
+        <a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button> </a>
+        <input type="submit" onclick="update()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE">
+    </div>
+
+ <!-- Template FOR ROOM TYPE-->
+    <div id="newlinktpl" style="display:none">
+        <label style="width:15%;" for="fname"></label>
+            <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="Single Space">
+        <label for="fname" style="width:10%;margin-left:10px;margin-right:0%;">Rental Fee</label>
+            <input type="text" id="fname" name="fname" style="width:5%;margin-left:0%;" class="inputapp" value="1500">
+    </div>
 
 </form>
-
-<!-- Template FOR ROOM TYPE-->
-    <div id="newlinktpl" style="display:none">
-        <label for="fname"></label>
-            <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="1500">
-        <label for="fname" style="margin-left:10px;">Rental Fee</label>
-            <input type="text" id="fname" name="fname" style="width:5%;margin-left:-10%;" class="inputapp" value="1500">
 </div>
-
-<!-- Template FOR IMAGE -->
-<div id="newlinkimage" style="display:none">
-    <label for="image"></label> 
-    <input type="file" name="image" accept="image/*" class="inputapp">
-    
-</div>
-
-
-</div>
-</body>
-
 
 <script>
 /*
 This script is identical to the above JavaScript function.
 */
 var ct = 1;
-var ig = 1;
-function new_link()
-{
-	ct++;
-	var div1 = document.createElement('div');
-	div1.id = ct;
+    function new_link()
+    {
+    	ct++;
+	    var div1 = document.createElement('div');
+	    div1.id = ct;
 	// link to delete extended form elements
-	var delLink = '<button type="button" onclick="delIt('+ ct +')" class="addbutton">x</button>';
-    var addLink = '<button type="button" onclick="new_link()" class="addbutton">+</button>  ';
-	div1.innerHTML = document.getElementById('newlinktpl').innerHTML + delLink ;
-	document.getElementById('newlink').appendChild(div1);
-}
+	    var delLink = '<button type="button" onclick="delIt('+ ct +')" class="addbutton">x</button>';
+        var addLink = '<button type="button" onclick="new_link()" class="addbutton">+</button>  ';
+	    div1.innerHTML = document.getElementById('newlinktpl').innerHTML + delLink ;
+	    document.getElementById('newlink').appendChild(div1);
+    }
 
-function new_linkimage()
-{
-	ig++;
-	var div2 = document.createElement('div');
-	div2.id = ig;
-	// link to delete extended form elements
-	var delLink = '<button type="button" onclick="delItimg('+ ig +')" class="addbutton">x</button>';
-    var addLink = '<button type="button" onclick="new_linkimage()" class="addbutton">+</button>  ';
-	div2.innerHTML = document.getElementById('newlinkimage').innerHTML + delLink ;
-	document.getElementById('linkimage').appendChild(div2);
-}
 // function to delete the newly added set of elements
-function delIt(eleId)
-{
-	d = document;
-	var ele = d.getElementById(eleId);
-	var parentEle = d.getElementById('newlink');
-	parentEle.removeChild(ele);
-}
-
-function delItimg(eleId)
-{
-	d = document;
-	var ele = d.getElementById(eleId);
-	var parentEle = d.getElementById('linkimage');
-	parentEle.removeChild(ele);
-}
-
+    function delIt(eleId)
+    {
+	    d = document;
+	    var ele = d.getElementById(eleId);
+	    var parentEle = d.getElementById('newlink');
+	    parentEle.removeChild(ele);
+    }
 
      
 </script>
-
+</body>
 </html>
