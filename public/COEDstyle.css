@@ -47,7 +47,7 @@ legend{
 }
 
 hr{
-  width: 95%; 
+  width: 100%; 
   border-color: #FFB700;
   float: left;
   margin-top: 20px;
@@ -61,6 +61,13 @@ label{
   display: inline-block;
   width: 25%;
   margin-left: 0%;
+}
+
+textarea{
+  width:70%;
+  height:50px;
+  font-family: Regular;
+
 }
 .tablewrapper {
   overflow:hidden;
@@ -253,8 +260,8 @@ background: #1D6115;
 .registercontainer {
   display: flex;
   background-color: #0C4B05;
-  width: 60%;
-  padding: 5% 15% 10% 0%;
+  width: 80%;
+  padding: 3% 15% 10% 0%;
   height: 100%;  
 }
 
@@ -263,7 +270,7 @@ background: #1D6115;
   display: inline-block;
   width: 100%;
   height: 100%;
-  margin: 10% 2% 2% 10%;
+  margin: 5% 2% 2% 10%;
 }
 
 .logincontainer label{

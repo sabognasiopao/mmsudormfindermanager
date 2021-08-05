@@ -36,24 +36,35 @@
 
     <div class="updatedormcontainer">
         <form style="width:100%;">
-            <label for="fname">Full Name</label><br>
-                <input type="text" id="fname" name="fname" style="width: 42%;" class="inputapp" value="Sample Name"><br><br>
+            
+    <label for="fname">First Name</label>
+    <label for="fname">Middle Name</label>
+    <label for="fname">Last Name</label><br>
+    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name">
+    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name">
+    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name"><br><br>
 
-            <label style="width:20%;" for="brgy">Barangay</label>
-            <label style="width:20%;" for="st">Street</label><br>
-                <input type="text" id="brgy" name="fname" style="width: 20%;" class="inputapp" value="6 Quiling Sur">
-                <input type="text" id="st" name="fname" style="width: 20%;" class="inputapp" value="Jakamo Street"><br><br>
+    <label for="dname">Dorm Name</label>
+    <label for="contact">Contact</label>
+    <label for="quantity">Available space</label><br>
+    <input type="tel" id="fname" name="dname" style="width: 25%;" class="inputapp" value="Sample Dorm Name">
+    <input type="text" id="fname" name="contact" style="width: 25%;" class="inputapp" value="Sample Contact">
+    <input type="number" id="quantity" name="quantity"  style="width: 25%;" class="inputapp" min="0" value="10"><br><br>
+    
+    <label for="brgy">Barangay</label>
+    <label for="st">Street</label><br>
+    <input type="text" id="brgy" name="fname" style="width: 25%;" class="inputapp" value="6 Quiling Sur">
+    <input type="text" id="st" name="fname" style="width: 25%;" class="inputapp" value="Jakamo Street"><br><br>
 
-            <label style="width:20%;" for="hn">House Number</label>
-            <label style="width:20%;" for="nl">Nearest Landmark</label><br>
-                <input type="text" id="hn" name="fname" style="width: 20%;" class="inputapp" value="1231">
-                <input type="text" id="nl" name="fname" style="width: 20%;" class="inputapp" value="Teatro Ilocandia"><br><br>
+    <label for="hn">House Number</label>
+    <label for="nl">Nearest Landmark</label><br>
+    <input type="text" id="hn" name="fname" style="width: 25%;" class="inputapp" value="1231">
+    <input type="text" id="nl" name="fname" style="width: 25%;" class="inputapp" value="Teatro Ilocandia"><br><br>
 
-            <label style="width: 20%;" for="fname">Contact</label>
-            <label style="width: 20%;" for="quantity">Available space</label><br>
-                <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="Sample Contact">
-            <input type="number" id="quantity" name="quantity"  style="width: 20%;" class="inputapp" min="0" value="10"><br><br>
-        </form>
+    <label for="fname">Short Description</label><br>
+    <textarea readonly></textarea><br><br>
+
+    </form>
 
     <div class="tablewrapper">
     <table class="viewdormtable" id="room">
@@ -83,7 +94,7 @@
                 </tr>
     </table></div><br>
 
-    <label style="width:50%;margin-top:2%;" for="slide">Uploaded Images : Click button to add/remove</label>
+    <label style="width:50%;margin-top:2%;" for="slide">Uploaded Images :</label>
    
     <div class="slide-container" id="slide">
             <img src="http://placehold.it/200" />

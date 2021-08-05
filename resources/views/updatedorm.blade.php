@@ -49,26 +49,31 @@
     <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name">
     <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name"><br><br>
 
-    <label for="fname">Contact</label>
+    <label for="dname">Dorm Name</label>
+    <label for="contact">Contact</label>
     <label for="quantity">Available space</label><br>
-    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Contact">
-    <input type="number" id="quantity" name="quantity" class="inputapp" min="0" value="10"><br>
+    <input type="tel" id="fname" name="dname" style="width: 25%;" class="inputapp" value="Sample Dorm Name">
+    <input type="text" id="fname" name="contact" style="width: 25%;" class="inputapp" value="Sample Contact">
+    <input type="number" id="quantity" name="quantity"  style="width: 25%;" class="inputapp" min="0" value="10"><br><br>
+    
+    <label for="brgy">Barangay</label>
+    <label for="st">Street</label><br>
+    <input type="text" id="brgy" name="fname" style="width: 25%;" class="inputapp" value="6 Quiling Sur">
+    <input type="text" id="st" name="fname" style="width: 25%;" class="inputapp" value="Jakamo Street"><br><br>
 
-
-    <label style="width:20%;"for="brgy">Barangay</label>
-    <label for="st">Street</label>
-    <label style="width:10%;" for="hn">House Number</label>
+    <label for="hn">House Number</label>
     <label for="nl">Nearest Landmark</label><br>
-    <input type="text" id="brgy" name="fname" style="width: 20%;" class="inputapp" value="6 Quiling Sur">
-    <input type="text" id="st" name="fname" style="width: 25%;" class="inputapp" value="Jakamo Street">
-    <input type="text" id="hn" name="fname" style="width: 10%;" class="inputapp" value="1231">
+    <input type="text" id="hn" name="fname" style="width: 25%;" class="inputapp" value="1231">
     <input type="text" id="nl" name="fname" style="width: 25%;" class="inputapp" value="Teatro Ilocandia"><br><br>
+
+    <label for="fname">Short Description</label><br>
+    <textarea></textarea><br><br>
 
    
    
    
     <label for="fname">Amenities</label><br>
-    <div class="tablewrapper" style="margin-right:20%;">
+    <div class="tablewrapper" style="margin-right:20%;width:90%;">
         <input type="checkbox" id="am1" name="vehicle1" value="Bike">
             <label style="width:20%;" for="am1"> Free Wifi</label>
         <input type="checkbox" id="am2" name="vehicle2" value="Car">

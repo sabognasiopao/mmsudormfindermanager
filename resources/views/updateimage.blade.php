@@ -19,7 +19,7 @@
     <div class="topnav" id="myTopnav">
         <img style="float:left;margin-left:20px;margin-top:10px;" src="/images/mmsu logo.png"  height="60" width="60">
         <h4>MARIANO MARCOS <br> STATE UNIVERSITY</h4>
-        <div class="titleheader">DORM</div>
+        <div class="titleheader">DORM: Update Image</div>
     </div>
                 
     <div class="verticalnav">
@@ -60,13 +60,38 @@
     <input type="file" name="image" accept="image/*" class="inputapp">
     </div>
 
- 
-    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:10%;margin-top:10px;">UPDATE</button></a>
+    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:15%;margin-top:10px;">UPDATE</button></a>
+    <a href="updatedorm"><button type="button" class="greenbutton" style="margin-right:2%;margin-top:10px;">DELETE ALL</button></a>
 
 </div>
-
-
-
-
 </body>
+
+<script>
+/*
+This script is identical to the above JavaScript function.
+*/
+var ig = 1;
+function new_linkimage()
+{
+	ig++;
+	var div2 = document.createElement('div');
+	div2.id = ig;
+	// link to delete extended form elements
+	var delLink = '<button type="button" onclick="delItimg('+ ig +')" class="addbutton">x</button>';
+    var addLink = '<button type="button" onclick="new_linkimage()" class="addbutton">+</button>  ';
+	div2.innerHTML = document.getElementById('newlinkimage').innerHTML + delLink ;
+	document.getElementById('linkimage').appendChild(div2);
+}
+// function to delete the newly added set of elements
+
+function delItimg(eleId)
+{
+	d = document;
+	var ele = d.getElementById(eleId);
+	var parentEle = d.getElementById('linkimage');
+	parentEle.removeChild(ele);
+}
+     
+</script>
+
 </html>

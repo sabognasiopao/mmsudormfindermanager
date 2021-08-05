@@ -23,23 +23,30 @@
                 <h4>MARIANO MARCOS <br> STATE UNIVERSITY</h4>
                 </div>
                 
-                <img style="right:21%;" class="__img" src="images/mmsu logo.png" />
+                <img style="right:5%;" class="__img" src="images/mmsu logo.png" />
 
     <div class="registercontainer">
 
                     <form id="Registration">
                     <legend>Registration</legend>
-                    <hr>
-                        <input type="text" id="username" placeholder="Username" class="loginform" style="margin-top:30px;"> 
-                        <input type="text" id="fullname" placeholder="Full Name" class="loginform" style="margin-top:10px;"> <br>
+                    <hr style="width:80%;">
+                        <input type="text" id="username" placeholder="Username" class="loginform" style="margin-top:30px;width:25%;"> 
+                        <input type="text" id="dormname" placeholder="Dorm Name" class="loginform" style="margin-top:10px;width:25%;">
+                        <input type="text" id="mnumber" placeholder="Mobile Number" class="loginform" style="margin-top:10px;width:25%;"> <br>
 
-                        <input type="password" id="password" placeholder="Password" class="loginform" style="margin-top:10px;"> 
-                        <input type="password" id="cpassword" placeholder="Confirm Password" class="loginform" style="margin-top:10px;"> <br>
-                        <input type="text" id="dormname" placeholder="Dorm Name" class="loginform" style="margin-top:10px;"> 
-                        <input type="text" id="mnumber" placeholder="Mobile Number" class="loginform" style="margin-top:10px;"> <br>
+                        <input type="text" id="fullname" placeholder="First Name" class="loginform" style="margin-top:10px;width:25%;"> 
+                        <input type="text" id="fullname" placeholder="Middle Name" class="loginform" style="margin-top:10px;width:25%;"> 
+                        <input type="text" id="fullname" placeholder="Last Name" class="loginform" style="margin-top:10px;width:25%;"><br>
 
-                        <input type="submit" value="Register"class="yellowbutton" style="width:92%;margin-top:15px;"><br>
-                        <a href="welcome"><button type="button" id="cancel" class="cancelbutton" style="width:92%;">Cancel</button></a>
+                        <input type="password" id="password" placeholder="Password" class="loginform" style="margin-top:10px;width:25%;"> 
+                        <input type="password" id="cpassword" placeholder="Confirm Password" class="loginform" style="margin-top:10px;width:25%;"> <br>
+
+                        <hr style="width:80%;"><br>
+                        <p style="color:white;font-size:0.8vw;text-align: justify;width:80%;">By submitting this form, you agree to the collection and processing of your personal data in accordance with the policies of the Mariano Marcos State University.  
+               This consent does not preclude the existence of other criteria for lawful 
+               processing of personal data and does not waive any rights under the <a style="color:#FFCD00;"href="https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/">Data Privacy Act of 2012</a> and other applicable laws.</p>
+                        <input type="submit" value="Register"class="yellowbutton" style="width:80%;margin-top:15px;"><br>
+                        <a href="welcome"><button type="button" id="cancel" class="cancelbutton" style="width:80%;">Cancel</button></a>
 
                     </form>
 
