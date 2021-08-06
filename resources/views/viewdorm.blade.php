@@ -30,7 +30,7 @@
             <li><a href="listoccupants"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/user-rights.png"/> Occupants</a></li>
             <li><a class="active" href="viewdorm"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/department.png"/> Dorm</a></li>
             <li><a href="contact"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/info-squared.png"/> Contact</a></li><br><br>
-            <li><a href="welcome" style="color:red;"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png"/>Log Out</a></li>
+            <li><button type="button"><a href="welcome" style="padding-left: 0%;color:red;"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png"/>Log Out</a></button></li>
         </ul>    
     </div>
 
@@ -66,8 +66,38 @@
 
     </form>
 
-    <div class="tablewrapper">
-    <table class="viewdormtable" id="room">
+    <div style="display:flex;">
+            <div class="tablewrapper" style="margin-right:20%;">
+            <table class="viewdormtable" id="room">
+                <tr>
+                    <th>Ammenities</th>
+                </tr> 
+               <tr>
+                    <td class="readapp">Single</td>
+               </tr>
+               <tr>
+                    <td class="readapp">Single</td>
+               </tr>
+               <tr>
+                    <td class="readapp">Single</td>
+               </tr>
+               <tr>
+                    <td class="readapp">Single</td>
+               </tr>
+               <tr>
+                    <td class="readapp">Single</td>
+               </tr>
+               <tr>
+                    <td class="readapp">Single</td>
+               </tr>
+               <tr>
+                    <td class="readapp">Single</td>
+               </tr>
+            </table>
+            </div>
+
+            <div class="tablewrapper"  >
+            <table class="viewdormtable" id="room">
                 <tr>
                     <th>Room Type</th>
                     <th>Price</th>
@@ -92,7 +122,16 @@
                     <td class="readapp">Single</td>
                     <td class="readapp">1500</td>
                 </tr>
-    </table></div><br>
+                <tr>
+                    <td class="readapp">Single</td>
+                    <td class="readapp">1500</td>
+                </tr>
+               
+            </table>
+            </div>
+        
+        </div>
+            
 
     <label style="width:50%;margin-top:2%;" for="slide">Uploaded Images :</label>
    

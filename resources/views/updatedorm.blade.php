@@ -34,7 +34,7 @@
             <li><a href="listoccupants"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/user-rights.png"/> Occupants</a></li>
             <li><a class="active" href="viewdorm"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/department.png"/> Dorm</a></li>
             <li><a href="contact"><img src="https://img.icons8.com/fluent-systems-regular/96/000000/info-squared.png"/> Contact</a></li><br><br>
-            <li><a href="welcome" style="color:red;"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png"/>Log Out</a></li>
+            <li><button type="button"><a href="welcome" style="padding-left: 0%;color:red;"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png"/>Log Out</a></button></li>
         </ul>    
     </div>
 
@@ -66,81 +66,74 @@
     <input type="text" id="hn" name="fname" style="width: 25%;" class="inputapp" value="1231">
     <input type="text" id="nl" name="fname" style="width: 25%;" class="inputapp" value="Teatro Ilocandia"><br><br>
 
+    <label style="width:15%;" for="contract">Add Contract <br>File type: [DOCS/PDF]</label>
+    <input type="file" name="image" accept=".doc,.pdf,.docx" class="inputapp"><br>
+
     <label for="fname">Short Description</label><br>
     <textarea></textarea><br><br>
-
-   
-   
-   
-    <label for="fname">Amenities</label><br>
-    <div class="tablewrapper" style="margin-right:20%;width:90%;">
-        <input type="checkbox" id="am1" name="vehicle1" value="Bike">
-            <label style="width:20%;" for="am1"> Free Wifi</label>
-        <input type="checkbox" id="am2" name="vehicle2" value="Car">
-            <label style="width:20%;" for="am2"> With Appliances</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3"> Aircondition</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3"> Food Services</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3">Parking</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3"> Laundry Services</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3"> With Living Room</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3"> With Pool</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3"> Surveillance System</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3">Own Bathroom</label>
-        <input type="checkbox" id="am3" name="vehicle3" value="Boat">
-            <label style="width:20%;" for="am3">With Furniture</label>
+    <div style="display:flex;">
+    <div class="tablewrapper" style="margin-right:5%;width:40%;">
+    <table class="viewdormtable" id="room">
+        <tr>
+            <th>Amenities</th>
+        </tr>
+        <tr>
+            <td>putangina mo</td>
+        </tr>
+    </table>
     </div><br>
 
-    <label style="width:15%;" for="contract">Add Contract <br>File type: [DOCS/PDF]</label>
-        <input type="file" name="image" accept=".doc,.pdf,.docx" class="inputapp"><br>
+    <div class="tablewrapper" style="margin-right:0%;width:40%;">
+    <table class="viewdormtable" id="room">
+        <tr>
+            <th>Room Type</th>
+            <th>Room Fee</th>
+        </tr>
+        <tr>
+            <td>putangina mo</td>
+            <td>1500</td>
 
-    <div id="newlink">
-        <label style="width:15%;" for="fname">Room Type</label>
-        <button type="button" onclick="new_link()" class="addbutton" style="width:15%;">ADD ROOM TYPE</button>  
-    </div>
+        </tr>
+    </table>
+    </div></div><br>
 
-  
-    <div style="padding-right:10%;margin-top:10px;">
+    <select name="amenities" id="amenities" class="inputapp">
+        <option selected disable hidden>Choose what you want to remove</option>
+        <option>putangina mo</option>
+    </select>
+        <button type="button" onclick="new_link()" class="addbutton" style="width:15%;margin-right:10%;">REMOVE</button>  
+
+    <select name="roomtype" id="room" class="inputapp">
+        <option selected disable hidden>Choose what you want to remove</option>
+        <option>putangina mo ulet</option>
+    </select>
+        <button type="button" onclick="new_link()" class="addbutton" style="width:15%;">REMOVE</button><br>
+
+
+        <div style="display:flex;">
+
+        <h3 style="width:45%;" for="fname">Add Ammenities</h3>        
+        <h3 style="width:40%;" for="fname">Add Room Type</h3><br>
+</div>
+        <label style="width:10%;" for="fname">Ammenities</label>
+            <input type="text" id="fname" name="fname" style="width:20%;margin-right:12%;" class="inputapp" value="Single Space">
+        <label style="width:10%;" for="fname">Room Type</label>
+            <input type="text" id="fname" name="fname" style="width: 10%;" class="inputapp" value="Single Space">
+        <label for="fname" style="width:10%;margin-left:10px;margin-right:0%;">Rental Fee</label>
+            <input type="text" id="fname" name="fname" style="width:5%;margin-left:0%;" class="inputapp" value="1500">
+            <div style="padding-right:10%;margin-top:10px;">
+
+
         <a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button> </a>
         <input type="submit" onclick="update()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE">
     </div>
-
- <!-- Template FOR ROOM TYPE-->
-    <div id="newlinktpl" style="display:none">
-        <label style="width:15%;" for="fname"></label>
-            <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="Single Space">
-        <label for="fname" style="width:10%;margin-left:10px;margin-right:0%;">Rental Fee</label>
-            <input type="text" id="fname" name="fname" style="width:5%;margin-left:0%;" class="inputapp" value="1500">
-    </div>
-
 </form>
 </div>
 
 <script>
-/*
-This script is identical to the above JavaScript function.
-*/
-var ct = 1;
-    function new_link()
-    {
-    	ct++;
-	    var div1 = document.createElement('div');
-	    div1.id = ct;
-	// link to delete extended form elements
-	    var delLink = '<button type="button" onclick="delIt('+ ct +')" class="addbutton">x</button>';
-        var addLink = '<button type="button" onclick="new_link()" class="addbutton">+</button>  ';
-	    div1.innerHTML = document.getElementById('newlinktpl').innerHTML + delLink ;
-	    document.getElementById('newlink').appendChild(div1);
-    }
+/*This script is identical to the above JavaScript function.*/
 
-// function to delete the newly added set of elements
+
     function delIt(eleId)
     {
 	    d = document;
@@ -149,7 +142,6 @@ var ct = 1;
 	    parentEle.removeChild(ele);
     }
 
-     
 </script>
 </body>
 </html>
