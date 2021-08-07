@@ -351,6 +351,7 @@ background: #1D6115;
     margin-top:15px; 
     margin-bottom:50px;
     float: right;
+    font-size: 1vw;
     cursor: pointer;
 }
 
@@ -365,6 +366,7 @@ background: #1D6115;
     margin-top:15px; 
     margin-bottom:50px;
     float: right;
+    font-size: 1vw;
     cursor: pointer;
 }
 
@@ -385,11 +387,10 @@ background: #1D6115;
   background-color:#1D6115;
   color: #FFB700;
   font-size: 1vw;
-  border-style:solid;
-  border-color: #FFB700;
+  border-style:none;
   width: 50px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0px 5px 10px 5px;
   cursor: pointer;
 }
@@ -523,6 +524,10 @@ font-size: 1.2vw;
 text-align: left;
 background-color: #0C4B05;
 position: sticky;
+}
+
+.viewdormtable td{
+  background-color: rgb(221, 221, 221);
 }
 
 

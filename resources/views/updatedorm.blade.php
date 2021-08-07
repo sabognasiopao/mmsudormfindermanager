@@ -73,53 +73,55 @@
     <textarea readonly></textarea><br><br>
 
     <div style="display:flex;">
+        <div style="width:50%;">
+            <table class="viewdormtable" id="room">
+            <tr>
+                <th>Room Type</th>
+                <th>Vacancy</th>
+                <th>Room Fee</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>putangina mo</td>
+                <td>5</td>
+                <td>1500</td>
+                <td><button style="width:100%;" type="button">DELETE</button></td>
+            </tr>
+            </table>
+        <br>
+            <select name="roomtype" id="room" class="inputapp" style="width:65%;">
+                <option selected disable hidden>Choose what you want to add</option>
+                <option>putangina mo ulet</option>
+            </select><br><br><br>
 
-    <table class="viewdormtable" id="room">
-        <tr>
-            <th>Room Type</th>
-            <th>Vacancy</th>
-            <th>Room Fee</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>putangina mo</td>
-            <td>5</td>
-            <td>1500</td>
-            <td><button style="width:100%;" type="button">DELETE</button></td>
-        </tr>
-    </table><br>
-
-    <table class="viewdormtable" id="room">
-        <tr>
-            <th>Amenities</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>putangina mo</td>
-            <td><button type="button">DELETE</button></td>
-        </tr>
-    </table></div><br>
-
-    <select name="roomtype" id="room" class="inputapp" style="width:25%;margin-right:25%;">
-        <option selected disable hidden>Choose what you want to add</option>
-        <option>putangina mo ulet</option>
-    </select>
-
-    <select name="amenities" id="amenities" class="inputapp" style="width: 25%;">
-        <option selected disable hidden>Choose what you want to add</option>
-        <option>putangina mo</option>
-    </select>
-        <button type="button" onclick="new_link()" class="addbutton" style="width:10%;margin-right:10%;">ADD</button><br>
-
-        <label style="width:10%;" for="fname">Room Fee</label>
-            <input type="text" id="fname" name="fname" style="width:5%;margin:0%;" class="inputapp" value="1500">
-        <label for="fname" style="width:8%;margin-left:10px;margin-right:0%;">Vacancy</label>
-            <input type="text" id="fname" name="fname" style="width:5%;margin-left:0%;" class="inputapp" value="5">
-    <button type="button" onclick="new_link()" class="addbutton" style="width:10%;">ADD</button>
+            <label style="width:20%;" for="fname">Room Fee</label>
+                <input type="text" id="fname" name="fname" style="width:10%;margin:0%;" class="inputapp" value="1500">
+            <label for="fname" style="width:15%;margin-left:10px;margin-right:0%;">Vacancy</label>
+                <input type="text" id="fname" name="fname" style="width:10%;margin-left:0%;" class="inputapp" value="5">
+            <button type="button" onclick="new_link()" class="addbutton" style="width:15%;">ADD</button>
+        </div><br>
 
 
+        <div style="margin-left:5%;width:40%;">
+            <table class="viewdormtable" id="room">
+                <tr>
+                    <th>Amenities</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>putangina mo</td>
+                    <td><button style="width:60%;" type="button">DELETE</button></td>
+                </tr>
+            </table><br>
 
+            <select name="amenities" id="amenities" class="inputapp" style="width:65%;">
+                <option selected disable hidden>Choose what you want to add</option>
+                <option>putangina mo</option>
+            </select>
 
+            <button type="button" onclick="new_link()" class="addbutton" style="width:15%;margin-right:10%;">ADD</button><br>
+    </div>
+</div><br>
 
     <div style="padding-right:10%;margin-top:10px;">
         <a href="viewdorm"><button type="button" class="greenbutton" style="margin-top:5%;">CANCEL</button> </a>
