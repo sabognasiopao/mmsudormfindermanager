@@ -68,6 +68,7 @@
     </form>
 
     <div style="display:flex;">
+            <div>
             <table class="viewdormtable" id="room">
                 <tr>
                     <th>Ammenities</th>
@@ -75,23 +76,10 @@
                <tr>
                     <td class="readapp">Single</td>
                </tr>
-               <tr>
-                    <td class="readapp">Single</td>
-               </tr>
-               <tr>
-                    <td class="readapp">Single</td>
-               </tr>
-               <tr>
-                    <td class="readapp">Single</td>
-               </tr>
-               <tr>
-                    <td class="readapp">Single</td>
-               </tr>
-               <tr>
-                    <td class="readapp">Single</td>
-               </tr>
+              
             </table>
-
+            </div>
+            <div style="margin-left:5%;">
             <table class="viewdormtable" id="room">
                 <tr>
                     <th>Room Type</th>
@@ -128,8 +116,7 @@
                     <td class="readapp">5</td>
                     <td class="readapp">1500</td>
                 </tr>
-               
-            </table>
+            </table></div>
         
         </div>
             

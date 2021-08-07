@@ -40,7 +40,7 @@
         </ul>    
     </div>
     
-    <div class="header"> <h1>OCCUPANTS</h1>
+    <div class="header"> <h1 style="color:white;"> OCCUPANTS </h1>
       <form style="margin-top:2%;margin-left:30%;" action="###">
         <input type="text" id="search" onkeyup="searchFunction()" placeholder="Search.." name="search">
         <button type="submit"><img src="https://img.icons8.com/pastel-glyph/50/000000/search--v2.png" width="100%"></button>

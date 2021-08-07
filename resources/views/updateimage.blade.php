@@ -34,64 +34,90 @@
         </ul>    
     </div>
 
-<div class="updatedormcontainer">
+<div class="updateimagecon">
     
-    <label for="slide">Uploaded Images</label>
-    <div class="slide-container" id="slide">
-            <img src="http://placehold.it/200" />
-            <img src="http://placehold.it/200" />
-            <img src="http://placehold.it/200" />
-            <img src="http://placehold.it/200" />
-            <img src="http://placehold.it/200" />
-            <img src="http://placehold.it/200" />
-            <img src="http://placehold.it/200" />
-            <img src="http://placehold.it/200" />
+    <!-- SLIDESHOW OF DORMITORY  -->
+        <div class="dorm_details_con">
+
+        <div id="slideshow" class="imgcontainer">
+        <div class="mySlides"> <img src="/images/sample.jpg" style="width:100%;height:400px;">
+            <div class="text">Single Space</div><div class="IDtext">Image ID: 1</div></div>
+
+        <div class="mySlides"><img src="/images/sample2.jpg"  style="width:100%;height:400px;">
+            <div class="text">Ammenities</div><div class="IDtext">Image ID: 2</div></div>
+
+        <div class="mySlides"><img src="/images/sample.jpg"  style="width:100%;height:400px;">
+            <div class="text">Single Space</div><div class="IDtext">Image ID: 3</div></div>
+
+        <div class="mySlides"><img src="/images/sample2.jpg"  style="width:100%;height:400px;">
+            <div class="text">Ammenities</div><div class="IDtext">Image ID: 4</div></div>
+
+        <a class="prev" onclick="plusSlides(-1, slideshow)">❮</a>
+        <a class="next" onclick="plusSlides(1, slideshow)">❯</a>
+        </div>
+         
     </div>
 
-    <div id="linkimage">
-        <label for="image">Add Image <br><h5 style="margin-top:0px;color:#FFB700;">File type: [JPG/PNG]</h5></label> 
-        <button type="button" onclick="new_linkimage()" class="addbutton" style="margin-left:5%;width:20%;">ADD IMAGE</button>  <br>
+    <div class="dorm_details">    
+        <form style="width:90%;">
+        
+        <label style="width:70%;margin-top:5%;" accept="image/*" for="image">Add Image File type: [JPG/PNG]</label><br>
+            <input type="file" id="myfile" class="imagefile" name="myfile"><br>
+
+        <label style="width:40%;margin-bottom:2%;" accept="image/*" for="image">Select label for image</label><br>
+            <select style="width:auto" class="inputapp">
+                <option>Single Space</option>
+                <option>Ammenities</option>
+                <option>Single Space</option>
+            </select><br>
+    
+        <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:15%;margin-top:10px;margin-bottom:1%;">ADD</button></a><br><br>
+        
+    <hr style="margin-top:5%;">
+
+    <label style="width:40%;margin-bottom:2%;" accept="image/*" for="image">Delete image : choose image ID</label>
+        <select style="width:15%" class="inputapp">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:15%;margin-top:0%;margin-bottom:2%;">DELETE</button></a>
+        <hr style="margin-top:2%;"><br>
+    
     </div>
 
 
-    <!-- Template FOR IMAGE -->
-    <div id="newlinkimage" style="display:none">
-    <label for="image"></label> 
-    <input type="file" name="image" accept="image/*" class="inputapp">
-    </div>
-
-    <a href="updatedorm"><button type="button" class="secondyellowbutton" style="margin-right:15%;margin-top:10px;">UPDATE</button></a>
-    <a href="updatedorm"><button type="button" class="greenbutton" style="margin-right:2%;margin-top:10px;">DELETE ALL</button></a>
 
 </div>
 </body>
 
 <script>
-/*
-This script is identical to the above JavaScript function.
-*/
-var ig = 1;
-function new_linkimage()
-{
-	ig++;
-	var div2 = document.createElement('div');
-	div2.id = ig;
-	// link to delete extended form elements
-	var delLink = '<button type="button" onclick="delItimg('+ ig +')" class="addbutton">x</button>';
-    var addLink = '<button type="button" onclick="new_linkimage()" class="addbutton">+</button>  ';
-	div2.innerHTML = document.getElementById('newlinkimage').innerHTML + delLink ;
-	document.getElementById('linkimage').appendChild(div2);
-}
-// function to delete the newly added set of elements
+var slideshow = document.getElementById("slideshow");
+        slideshow.currentSlideIndex = 1;
+        showSlides(slideshow.currentSlideIndex, slideshow);
 
-function delItimg(eleId)
-{
-	d = document;
-	var ele = d.getElementById(eleId);
-	var parentEle = d.getElementById('linkimage');
-	parentEle.removeChild(ele);
-}
-     
+        function plusSlides(n, slideshow) {
+        showSlides(slideshow.currentSlideIndex += n, slideshow);
+        }
+
+        function currentSlide(n, slideshow) {
+        showSlides(slideshow.currentSlideIndex = n, slideshow);
+        }
+
+        function showSlides(n, slideshow) {
+  
+            var i;
+            var slides = slideshow.getElementsByClassName("mySlides");
+       
+            if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+            if (n < 1) {slideshow.currentSlideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+
+        slides[slideshow.currentSlideIndex-1].style.display = "block";  
+        }
+    
 </script>
 
 </html>
