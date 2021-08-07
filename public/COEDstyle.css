@@ -203,7 +203,7 @@ background: #1D6115;
     display: block;
     height: 100%;
     padding-left: 25%;   
-    padding-top: 3%; 
+    padding-top: 2%; 
     overflow-y: scroll;
 }
 
@@ -310,7 +310,7 @@ background: #1D6115;
     color: #0C4B05;
     border-style: none;
     font-size: 1.3vw;
-    width: 30%;
+    width: 20%;
     height: 40px;
     border-radius: 12px;
     cursor: pointer;
@@ -602,6 +602,7 @@ display: flex;
     overflow-y: auto;
     height: 400px;
     width: 95%;
+    border-radius: 15px;
   }
 
   .tableFixHead button{
@@ -632,12 +633,14 @@ display: flex;
 
   .tableFixHeadtitle {
     position: sticky;
-    padding-left: 10px;
+    padding-left:2%;
     width: 95%;
     margin: 0px 0px 0px 0px;
     color: #FFB700;
     background-color: #0C4B05;
     font-size: 2vw;
+    border-radius: 20px;
+    margin-bottom: 1%;
   }
 
   table {
