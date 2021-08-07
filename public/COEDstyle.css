@@ -862,7 +862,7 @@ input[type='radio']#section3:checked ~ .cover {
   width: 100%;
   background-color: #0C4B05;
   font-size: 1.4vw;
-
+  border-radius: 10px;
 }
 
 
