@@ -37,52 +37,66 @@
     </div>
 
 <div class="listappcontainer">
-    <form>
-    <label class="detailslabel" for="fstudentid">Student Number</label>  
-        <label class="detailslabel" for="sex" >Sex</label>
-        <label class="detailslabel" for="email">Email</label>
-        <label class="detailslabel" for="number">Mobile Number</label><br>
+<form>
+    <div class="smallheader">FULL NAME</div>
+        <label for="fname">First Name</label>
+        <label for="mname">Midle Name</label>
+        <label for="lname">Last Name</label>
+        <label for="sname">Suffix (Jr,,III)</label><br>
+
+        <input type="text"  style="width:20%;margin-right:2%;" id="fname" value="Paola Joy" class="inputapp">
+        <input type="text"  style="width:20%;margin-right:2%;" id="mname" value="Nuque"  class="inputapp">
+        <input type="text"  style="width:20%;margin-right:2%;" id="lname" value="Francisco"  class="inputapp">
+        <input type="text"  style="width:20%;margin-right:2%;" id="sname" value="Jr."  class="inputapp"><br><br>
+
+    <div class="smallheader">ADDRESS</div>
+        <label for="barangay">Barangay</label>
+        <label for="street">Street</label>
+        <label  for="city">City</label>
+        <label for="province">Province</label>
+        <input type="text" style="width:20%;margin-right:2%;" id="barangay" value="6"  class="inputapp">
+        <input type="text" style="width:20%;margin-right:2%;"id="street" value="T. Alonzo Street"  class="inputapp">
+        <input type="text" style="width:20%;margin-right:2%;"id="city" value="Laoag City"  class="inputapp">
+        <input type="text" style="width:20%;"id="province" value="Ilocos Norte" class="inputapp"><br><br>
+
+    <div class="smallheader">CONTACT INFORMATION</div>
+        <label for="email">Email</label>
+        <label  for="number">Mobile Number</label>
+        <label for="nameg">Name of Guardian</label>
+        <label for="number">Contact of Guardian</label><br>
+
+        <input type="email" style="width:20%;margin-right:2%;" id="email" value="pjnfrancisco@gmail.com"  class="inputapp">
+        <input type="tel" style="width:20%;margin-right:2%;" id="number" value="09355350600" class="inputapp">
+        <input type="text" style="width:20%;margin-right:2%;"id="nameg" value="Philbert Francisco"  class="inputapp">
+        <input type="tel" style="width:20%;"id="number" value="09355350600"  class="inputapp"><br><br>
+
+    <div class="smallheader">ACADEMIC INFORMATION</div>
+        <label for="fstudentid">Student Number</label>  
+        <label for="college">College:</label>
+        <label for="course">Course:</label><br>
+
         
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;" id="fstudentid" value="18-020008" class="inputapp" readonly >
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;" id="sec" value="Female" class="inputapp" readonly>
-        <input type="email" style="width:20%;margin-right:2%;margin-left:0%;" id="email" value="pjnfrancisco@gmail.com"  class="inputapp" readonly>
-        <input type="tel" style="width:20%;margin-left:0%;" id="number" value="09355350600" class="inputapp" readonly><br><br>
+        <input type="text" style="width:20%;margin-right:2%;" id="fstudentid" value="18-020008" class="inputapp" >
+        <select name="college" style="width:20%;margin-right:2%;"id="room" class="inputapp">
+            <option value="cas">CAS</option>
+            <option value="coe">COE</option>
+            <option value="cbea">CBEA</option>
+            <option value="chs">CHS</option>
+        </select>
+        <input type="text" style="width:20%;margin-right:2%;"id="course" value="BSCS"  class="inputapp"><br><br>
 
-        <label class="detailslabel" for="fname">First Name</label>
-        <label class="detailslabel" for="mname">Midle Name</label>
-        <label class="detailslabel" for="lname">Last Name</label>
-        <label class="detailslabel" for="sname">Suffix (Jr,,III)</label><br>
+    <div class="smallheader">OTHER INFORMATION</div>
+         <label  for="sex" >Sex</label>
+         <label  for="sex" >Room Type</label><br>
 
-        <input type="text"  style="width:20%;margin-right:2%;margin-left:0%;" id="fname" value="Paola Joy" class="inputapp" readonly>
-        <input type="text"  style="width:20%;margin-right:2%;margin-left:0%;" id="mname" value="Nuque"  class="inputapp" readonly>
-        <input type="text"  style="width:20%;margin-right:2%;margin-left:0%;" id="lname" value="Francisco"  class="inputapp" readonly>
-        <input type="text"  style="width:20%;margin-right:2%;margin-left:0%;" id="sname" value="Jr."  class="inputapp" readonly><br><br>
+         <select name="room"  style="width:20%;margin-right:2%;" id="room" class="inputapp">
+                <option value="cas">Female</option>
+                <option value="coe">Male</option>
+         </select>
+         <input type="text" style="width:20%;margin-right:2%;" id="fstudentid" value="Single Space" class="inputapp" >
 
-        <label class="detailslabel" for="birthday">Barangay</label>
-        <label class="detailslabel" for="birthday">Street</label>
-        <label class="detailslabel" for="birthday">City</label>
-        <label class="detailslabel" for="birthday">Province</label>
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;" id="birthday" value="6"  class="inputapp" readonly>
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;"id="birthday" value="T. Alonzo Street"  class="inputapp" readonly>
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;"id="birthday" value="Laoag City"  class="inputapp" readonly>
-        <input type="text" style="width:20%;margin-left:0%;"id="birthday" value="Ilocos Norte" class="inputapp" readonly><br><br>
-
-
-        <label class="detailslabel" for="nameg">Name of Guardian</label>
-        <label class="detailslabel" for="number">Contact of Guardian</label>
-        <label class="detailslabel" for="college">College:</label>
-        <label class="detailslabel" for="course">Course:</label><br>
-
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;"id="nameg" value="Philbert Francisco"  class="inputapp" readonly>
-        <input type="tel" style="width:20%;margin-right:2%;margin-left:0%;"id="number" value="09355350600"  class="inputapp" readonly>
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;"id="college" value="CAS"  class="inputapp" readonly>
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;"id="course" value="BSCS"  class="inputapp" readonly><br><br>
-
-        <label class="detailslabel" for="room">Room Type</label><br>
-        <input type="text" style="width:20%;margin-right:2%;margin-left:0%;"id="nameg" value="Single Space"  class="inputapp" readonly><br>
-
-        <button type="button" onclick="denyapplicant()" class="greenbutton" style="margin-top:20px;">DENY</button>  
-        <button type="button" onclick="acceptapplicant()" class="secondyellowbutton" style="margin-right:10px;margin-top:20px;">ACCEPT</button>
+        <button type="button" onclick="denyapplicant()" class="greenbutton" style="margin-top:0%;" >DENY</button>  
+        <button type="button" onclick="acceptapplicant()" class="secondyellowbutton" style="margin-right:10px;margin-top:0%;">ACCEPT</button>
     </form>
 </div>
 

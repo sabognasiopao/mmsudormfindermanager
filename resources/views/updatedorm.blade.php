@@ -42,90 +42,88 @@
 <div class="updatedormcontainer">
 <form>
 
+<form style="width:95%;">
+
+<div class="smallheader" style="width:90%;">FULL NAME</div>
     <label for="fname">First Name</label>
     <label for="fname">Middle Name</label>
     <label for="fname">Last Name</label><br>
-    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name">
-    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name">
-    <input type="text" id="fname" name="fname" style="width: 25%;" class="inputapp" value="Sample Name"><br><br>
+    <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="Sample Name">
+    <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="Sample Name">
+    <input type="text" id="fname" name="fname" style="width: 20%;" class="inputapp" value="Sample Name"><br><br>
+    
+<div class="smallheader" style="width:90%;">ADDRESS</div>
+    <label for="brgy">Barangay</label>
+    <label for="st">Street</label>
+    <label for="nl">Nearest Landmark</label><br>
 
+    <input type="text" id="brgy" name="fname" style="width: 20%;" class="inputapp" value="6 Quiling Sur">
+    <input type="text" id="st" name="fname" style="width: 20%;" class="inputapp" value="Jakamo Street">
+    <input type="text" id="nl" name="fname" style="width: 20%;" class="inputapp" value="Teatro Ilocandia"><br><br>
+
+<div class="smallheader" style="width:90%;">OTHER INFORMATION</div>
     <label for="dname">Dorm Name</label>
     <label for="contact">Contact</label>
     <label for="quantity">Available space</label><br>
-    <input type="tel" id="fname" name="dname" style="width: 25%;" class="inputapp" value="Sample Dorm Name">
-    <input type="text" id="fname" name="contact" style="width: 25%;" class="inputapp" value="Sample Contact">
-    <input type="number" id="quantity" name="quantity"  style="width: 25%;" class="inputapp" min="0" value="10"><br><br>
+    <input type="tel" id="fname" name="dname" style="width: 20%;" class="inputapp" value="Sample Dorm Name">
+    <input type="text" id="fname" name="contact" style="width: 20%;" class="inputapp" value="Sample Contact">
+    <input type="number" id="quantity" name="quantity"  style="width: 20%;" class="inputapp" min="0" value="10"><br><br>
     
-    <label for="brgy">Barangay</label>
-    <label for="st">Street</label><br>
-    <input type="text" id="brgy" name="fname" style="width: 25%;" class="inputapp" value="6 Quiling Sur">
-    <input type="text" id="st" name="fname" style="width: 25%;" class="inputapp" value="Jakamo Street"><br><br>
-
-    <label for="hn">House Number</label>
-    <label for="nl">Nearest Landmark</label><br>
-    <input type="text" id="hn" name="fname" style="width: 25%;" class="inputapp" value="1231">
-    <input type="text" id="nl" name="fname" style="width: 25%;" class="inputapp" value="Teatro Ilocandia"><br><br>
-
-    <label style="width:15%;" for="contract">Add Contract <br>File type: [DOCS/PDF]</label>
-    <input type="file" name="image" accept=".doc,.pdf,.docx" class="inputapp"><br>
-
     <label for="fname">Short Description</label><br>
-    <textarea></textarea><br><br>
-    <div style="display:flex;">
-    <div class="tablewrapper" style="margin-right:5%;width:40%;">
-    <table class="viewdormtable" id="room">
-        <tr>
-            <th>Amenities</th>
-        </tr>
-        <tr>
-            <td>putangina mo</td>
-        </tr>
-    </table>
-    </div><br>
+    <textarea readonly></textarea><br><br>
 
-    <div class="tablewrapper" style="margin-right:0%;width:40%;">
+    <div style="display:flex;">
+
     <table class="viewdormtable" id="room">
         <tr>
             <th>Room Type</th>
+            <th>Vacancy</th>
             <th>Room Fee</th>
+            <th></th>
         </tr>
         <tr>
             <td>putangina mo</td>
+            <td>5</td>
             <td>1500</td>
-
+            <td><button style="width:100%;" type="button">DELETE</button></td>
         </tr>
-    </table>
-    </div></div><br>
+    </table><br>
 
-    <select name="amenities" id="amenities" class="inputapp">
-        <option selected disable hidden>Choose what you want to remove</option>
-        <option>putangina mo</option>
-    </select>
-        <button type="button" onclick="new_link()" class="addbutton" style="width:15%;margin-right:10%;">REMOVE</button>  
+    <table class="viewdormtable" id="room">
+        <tr>
+            <th>Amenities</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>putangina mo</td>
+            <td><button type="button">DELETE</button></td>
+        </tr>
+    </table></div><br>
 
-    <select name="roomtype" id="room" class="inputapp">
-        <option selected disable hidden>Choose what you want to remove</option>
+    <select name="roomtype" id="room" class="inputapp" style="width:25%;margin-right:25%;">
+        <option selected disable hidden>Choose what you want to add</option>
         <option>putangina mo ulet</option>
     </select>
-        <button type="button" onclick="new_link()" class="addbutton" style="width:15%;">REMOVE</button><br>
+
+    <select name="amenities" id="amenities" class="inputapp" style="width: 25%;">
+        <option selected disable hidden>Choose what you want to add</option>
+        <option>putangina mo</option>
+    </select>
+        <button type="button" onclick="new_link()" class="addbutton" style="width:10%;margin-right:10%;">ADD</button><br>
+
+        <label style="width:10%;" for="fname">Room Fee</label>
+            <input type="text" id="fname" name="fname" style="width:5%;margin:0%;" class="inputapp" value="1500">
+        <label for="fname" style="width:8%;margin-left:10px;margin-right:0%;">Vacancy</label>
+            <input type="text" id="fname" name="fname" style="width:5%;margin-left:0%;" class="inputapp" value="5">
+    <button type="button" onclick="new_link()" class="addbutton" style="width:10%;">ADD</button>
 
 
-        <div style="display:flex;">
-
-        <h3 style="width:45%;" for="fname">Add Ammenities</h3>        
-        <h3 style="width:40%;" for="fname">Add Room Type</h3><br>
-</div>
-        <label style="width:10%;" for="fname">Ammenities</label>
-            <input type="text" id="fname" name="fname" style="width:20%;margin-right:12%;" class="inputapp" value="Single Space">
-        <label style="width:10%;" for="fname">Room Type</label>
-            <input type="text" id="fname" name="fname" style="width: 10%;" class="inputapp" value="Single Space">
-        <label for="fname" style="width:10%;margin-left:10px;margin-right:0%;">Rental Fee</label>
-            <input type="text" id="fname" name="fname" style="width:5%;margin-left:0%;" class="inputapp" value="1500">
-            <div style="padding-right:10%;margin-top:10px;">
 
 
-        <a href="viewdorm"><button type="button" class="greenbutton">CANCEL</button> </a>
-        <input type="submit" onclick="update()" class="secondyellowbutton" style="margin-right:20px;" value="SAVE">
+
+    <div style="padding-right:10%;margin-top:10px;">
+        <a href="viewdorm"><button type="button" class="greenbutton" style="margin-top:5%;">CANCEL</button> </a>
+        <input type="submit" onclick="update()" class="secondyellowbutton" style="margin-right:20px;margin-top:5%;" value="SAVE">
     </div>
 </form>
 </div>

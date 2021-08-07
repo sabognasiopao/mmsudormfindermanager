@@ -49,7 +49,7 @@
 <!-- END OF NAVIGATION BAR -->  
 
 <!--  LIST OF OCCUPANTS -->  
-    <div class="listappcontainer" style="margin-top:2%;">
+    <div class="listappcontainer">
     <div class="tableFixHeadtitle">LIST OF OCCUPANTS</div>  
     <div class="tableFixHead">
       <table>
@@ -58,13 +58,15 @@
             <th>NAME</th>
             <th>STUDENT NUMBER</th>
             <th>CONTACT NUMBER</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><a href="detailsoccupants">Paola Francisco</a></td>
+            <td>Paola Francisco</td>
             <td>18-020008</td>
             <td>09355350600</td>
+            <td><a href="detailsoccupants"><button type="button">VIEW</button></a></td>
           </tr>
         </tbody>
       </table>
